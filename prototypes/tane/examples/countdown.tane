@@ -1,0 +1,9 @@
+# 3, 2, 1 を順に出力する。
+inc n
+inc n
+inc n
+
+while n
+    print n
+    dec n
+end

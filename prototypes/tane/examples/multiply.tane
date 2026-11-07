@@ -1,0 +1,23 @@
+# x = 3、y = 4。z に積を作り、y の値は維持する。
+inc x
+inc x
+inc x
+inc y
+inc y
+inc y
+inc y
+
+while x
+    dec x
+    while y
+        dec y
+        inc z
+        inc temporary
+    end
+    while temporary
+        dec temporary
+        inc y
+    end
+end
+
+print z

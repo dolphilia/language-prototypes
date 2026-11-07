@@ -1,0 +1,14 @@
+# x = 2、y = 3 を用意する。
+inc x
+inc x
+inc y
+inc y
+inc y
+
+# y を消費しながら x に足す。
+while y
+    dec y
+    inc x
+end
+
+print x
