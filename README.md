@@ -4,6 +4,7 @@
 得られた知見をメモ・ガイド・仕様書などの文書にまとめ、設計の具体化やアイデアの検証のためにプロトタイプを作成します。
 
 調査・考察のメモは `docs/notes/` に、言語ごとの仕様案・参照実装・サンプル・テストは `prototypes/` にまとめます。
+調査に基づくプロトタイプの実装計画は `docs/plans/` にまとめます。
 仕様の草案と実装済みの機能を区別しながら、文書の整備と試作・検証を進めます。
 
 ## 目次
@@ -12,6 +13,7 @@
 - [Ayaの言語仕様書](prototypes/aya/spec.md)
 - [Ayaの設計判断と検証計画](prototypes/aya/design.md)
 - [調査・設計メモ](docs/notes/README.md)
+- [プロトタイプの実装計画](docs/plans/README.md)
 - [所有権とその先 — メモリ管理から権限・並行性・効果へ](docs/notes/ownership-and-beyond.md)
 - [GhostCell詳解 — データとアクセス権限を分離する](docs/notes/ghostcell.md)
 - [OxCamlのモード詳解 — 値の使い方を複数の軸で追跡する](docs/notes/oxcaml-modes.md)
