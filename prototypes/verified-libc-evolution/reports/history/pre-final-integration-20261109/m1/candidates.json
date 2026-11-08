@@ -1,0 +1,210 @@
+{
+  "proof_nonce": "2986bd44cb9ff20eaba6c68f30f095e1f9d11d4c43e1a6b9",
+  "candidates": [
+    {
+      "candidate": "vp2_memcpy_chunk8",
+      "distribution_candidate": true,
+      "admissible": true,
+      "contracts": [
+        {
+          "candidate": "vp2_memcpy_chunk8",
+          "contract": "vp_copy_contract",
+          "status": "proved",
+          "evidence_kind": "hol_closed_theorem",
+          "reason": "chunk8:public",
+          "evidence": [
+            "reports/m1/core-proof.json",
+            "chunk8:public"
+          ],
+          "code_sha256": "5fcf779986ee6d4b71a929006259f22708c14e680c072cc661dac5fabe9aae1e"
+        },
+        {
+          "candidate": "vp2_memcpy_chunk8",
+          "contract": "vp_copy_access_contract",
+          "status": "proved",
+          "evidence_kind": "hol_closed_theorem",
+          "reason": "chunk8:access",
+          "evidence": [
+            "reports/m1/core-proof.json",
+            "chunk8:access"
+          ],
+          "code_sha256": "5fcf779986ee6d4b71a929006259f22708c14e680c072cc661dac5fabe9aae1e"
+        }
+      ]
+    },
+    {
+      "candidate": "vp2_memset",
+      "distribution_candidate": true,
+      "admissible": true,
+      "contracts": [
+        {
+          "candidate": "vp2_memset",
+          "contract": "vp_fill_contract",
+          "status": "proved",
+          "evidence_kind": "hol_closed_theorem",
+          "reason": "fill:public",
+          "evidence": [
+            "reports/m1/core-proof.json",
+            "fill:public"
+          ],
+          "code_sha256": "abd8f9055eeed5b1beba1752969b72be0f8647b736ea88e37e7a5f3f5967c65b"
+        },
+        {
+          "candidate": "vp2_memset",
+          "contract": "vp_fill_access_contract",
+          "status": "proved",
+          "evidence_kind": "hol_closed_theorem",
+          "reason": "fill:access",
+          "evidence": [
+            "reports/m1/core-proof.json",
+            "fill:access"
+          ],
+          "code_sha256": "abd8f9055eeed5b1beba1752969b72be0f8647b736ea88e37e7a5f3f5967c65b"
+        }
+      ]
+    },
+    {
+      "candidate": "vp2_equivalent_copy",
+      "distribution_candidate": false,
+      "admissible": false,
+      "contracts": [
+        {
+          "candidate": "vp2_equivalent_copy",
+          "contract": "vp_copy_contract",
+          "status": "proved",
+          "evidence_kind": "hol_closed_theorem",
+          "reason": "equivalent:public",
+          "evidence": [
+            "reports/m1/core-proof.json",
+            "equivalent:public"
+          ],
+          "code_sha256": "a4eb2d4917909b3cbc62b406f8680c6e8af79428de5c43b0690918e1dd32b8cf"
+        },
+        {
+          "candidate": "vp2_equivalent_copy",
+          "contract": "vp_copy_access_contract",
+          "status": "unknown",
+          "evidence_kind": "unfinished_proof",
+          "reason": "separate access theorem deliberately not supplied for this research-only candidate",
+          "evidence": [],
+          "code_sha256": "a4eb2d4917909b3cbc62b406f8680c6e8af79428de5c43b0690918e1dd32b8cf"
+        }
+      ]
+    },
+    {
+      "candidate": "chunk-mut:short-word",
+      "distribution_candidate": false,
+      "admissible": false,
+      "contracts": [
+        {
+          "candidate": "chunk-mut:short-word",
+          "contract": "copy.access",
+          "status": "counterexample",
+          "evidence_kind": "hol_execution",
+          "reason": "valid initial state and finite violating execution; not a failed tactic",
+          "evidence": [
+            "reports/m1/core-proof.json",
+            "chunk-mut:short-word:execution"
+          ],
+          "code_sha256": "3c0aaf712419dbcb24a6dcbb4eceb0262270672d4f22f9e680cf84c1abfc18d6"
+        }
+      ]
+    },
+    {
+      "candidate": "chunk-mut:extra-word",
+      "distribution_candidate": false,
+      "admissible": false,
+      "contracts": [
+        {
+          "candidate": "chunk-mut:extra-word",
+          "contract": "copy.access",
+          "status": "counterexample",
+          "evidence_kind": "hol_execution",
+          "reason": "valid initial state and finite violating execution; not a failed tactic",
+          "evidence": [
+            "reports/m1/core-proof.json",
+            "chunk-mut:extra-word:execution"
+          ],
+          "code_sha256": "977783f58e8f4d5d9a3c9510bf9811b357a3683b9ae3f442ef50c78294ab2050"
+        }
+      ]
+    },
+    {
+      "candidate": "chunk-mut:missing-tail",
+      "distribution_candidate": false,
+      "admissible": false,
+      "contracts": [
+        {
+          "candidate": "chunk-mut:missing-tail",
+          "contract": "copy.content",
+          "status": "counterexample",
+          "evidence_kind": "hol_execution",
+          "reason": "valid initial state and finite violating execution; not a failed tactic",
+          "evidence": [
+            "reports/m1/core-proof.json",
+            "chunk-mut:missing-tail:execution"
+          ],
+          "code_sha256": "35d6c004b435daed86012111f0a911a0ead9720bfd758d1c2ef21bf516eb93bd"
+        }
+      ]
+    },
+    {
+      "candidate": "chunk-mut:return",
+      "distribution_candidate": false,
+      "admissible": false,
+      "contracts": [
+        {
+          "candidate": "chunk-mut:return",
+          "contract": "copy.return",
+          "status": "counterexample",
+          "evidence_kind": "hol_execution",
+          "reason": "valid initial state and finite violating execution; not a failed tactic",
+          "evidence": [
+            "reports/m1/core-proof.json",
+            "chunk-mut:return:execution"
+          ],
+          "code_sha256": "941af65a64cbe60d0a501e3ec1d671742de06497def6304b60509677932082d8"
+        }
+      ]
+    },
+    {
+      "candidate": "chunk-mut:frame",
+      "distribution_candidate": false,
+      "admissible": false,
+      "contracts": [
+        {
+          "candidate": "chunk-mut:frame",
+          "contract": "copy.frame",
+          "status": "counterexample",
+          "evidence_kind": "hol_execution",
+          "reason": "valid initial state and finite violating execution; not a failed tactic",
+          "evidence": [
+            "reports/m1/core-proof.json",
+            "chunk-mut:frame:execution"
+          ],
+          "code_sha256": "de121a4e7974418a05ce6bf39063d3177c9a307e1b486e83cdde0ecf85b0d857"
+        }
+      ]
+    },
+    {
+      "candidate": "chunk-mut:decrease",
+      "distribution_candidate": false,
+      "admissible": false,
+      "contracts": [
+        {
+          "candidate": "chunk-mut:decrease",
+          "contract": "copy.access",
+          "status": "counterexample",
+          "evidence_kind": "hol_execution",
+          "reason": "valid initial state and finite violating execution; not a failed tactic",
+          "evidence": [
+            "reports/m1/core-proof.json",
+            "chunk-mut:decrease:execution"
+          ],
+          "code_sha256": "e6053e7e8a09baa20ed1190c186e6177f159631da505b26bbd71a517673ce5e7"
+        }
+      ]
+    }
+  ],
+  "infrastructure_tests": "expected driver failures are separate from candidate unknowns; see verification tests/logs"
+}

@@ -1,0 +1,149 @@
+{
+  "nonce": "d4278142145585661bb741af33ff1cd98c36c90bd0739a35",
+  "checks": [
+    "vp2_block_copy8_0",
+    "vp2_block_copy8_8",
+    "vp2_block_copy8_16",
+    "vp2_block_copy8_24",
+    "vp2_block_copy8_x3",
+    "vp2_block_copy8_indexed",
+    "vp2_block_copybyte_indexed",
+    "chunk8:tail",
+    "chunk8:bulk",
+    "chunk8:public",
+    "chunk8:tail-access",
+    "chunk8:bulk-access",
+    "chunk8:access-strong",
+    "chunk8:access",
+    "regions:root-ledger",
+    "regions:borrow-valid",
+    "regions:end-valid",
+    "regions:invalidate-valid",
+    "regions:borrow-rights",
+    "regions:owner-returned",
+    "regions:expired-generation",
+    "regions:active-invalidation-rejected",
+    "regions:transition-valid",
+    "regions:trace-valid",
+    "regions:split-bounds",
+    "regions:derive-copy-preconditions",
+    "regions:split-borrows",
+    "regions:split-permissions",
+    "regions:split-returned",
+    "regions:checked-success",
+    "regions:checked-failure",
+    "regions:exclusive-separation",
+    "regions:authorized-bounds",
+    "regions:overlap-write-rejected",
+    "regions:shared-overlap-allowed",
+    "regions:capacity-rejected",
+    "regions:unguarded-subtraction-and-address-rejected",
+    "regions:abstract-copy",
+    "regions:abstract-access",
+    "regions:abstract-protocol"
+  ],
+  "inputs": {
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/prover.py": "8c8a137c3ae34713d7c45dc7e71f9babfa747fc67608464c114cb3b3da4b6d1b",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/config.py": "6aff9555d8be8df4a253619cc7ab8645d2c5f61199793b2f0a81f7339f1b7fba",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/checks.ml": "d72a1c5dee0fa3aeee28a066b4960f6fe9be510f38a737aa5d261d035f43c9a8",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/deps.lock": "cf7b5c3fc079a302f4b69b7574df9d99fb4ef6f598390d0883791ac7b6d28578",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/deps.lock": "bb88ae59197f79d703e786eeb95b73109d569248ad4aa5a47316e77ab94a9954",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/opam-switch.export": "58d356ddd19d550db84aa58fdeb32c6394c64e990443011936e9da03afa65713",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/hol-light/ocaml-hol": "9c9528c9e88f6f56223de73f52db42884fe1f61a448fc71b607fbe8848926ec2",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/s2n-bignum/arm/generic/word_max.o": "35a3dd7f70b6d16ee378444624d6875ec38d295a57580aedf48b3c24339aace2",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/blocks.ml": "223cab06a848d2c844b127f60b9eb0e6d61cd25e1938dff1be561274b4cff5f3",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/memcpy_chunk8.ml": "225872760e28d547a664cf43b7a5c06d55e34b29eca480d20ea615a1189f0571",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/chunk_access.ml": "2e9697d13b3acda00e770b274b0a2d4b9c0a9241c7647b0f03d38575c2caa625",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/regions.ml": "ac20e48e0b0f8d6bde70dc9de40a17474785c0530cee93eeb4e9bfac8126d842",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/region_bounds.ml": "e659cd02e9d5905c33623d1dfb27232e6ee40666619673206772d4e9ee4ab67f",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/region_split.ml": "d7998cabfcfa0d2c22a2645be61482d4003fa73ba16dcd9678a7af30893d1bd1",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/region_policy.ml": "c203667a7e4920dfc897faea1ce33da5eb898c19667bc81ad91e093bebd1fdfb",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/region_negatives.ml": "9dc32942f57f4870b69d601108f84c649ff175064f872d44ef0efc2df7cb9ad5",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/region_calls.ml": "d571804fdae1f93abb82210dbea42b31f76aa8872d2b0de84fccfeed9121df31",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/blocks.ml": "752fcaee81baeaf0107896451eccbde337f59664d2dc45ab0637334afe93e417",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/chunk_tail.ml": "e0d079a1f49d24811245a9be8605ecbb7086461ed992924bd1485bc47c844a1d",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/chunk_bulk.ml": "baabd9427672d69531c356d7ebf444306ebf9da70c457ad949697de51d670d5d",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/memory.ml": "63a485b2afe4b03bafcfe7fb1a107b4bca8005fe35cd3ed19fe48cee0393fcdf",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/chunk_tail_access.ml": "38aba34a18fc2c73eaee682975eda6aad6b6a19285de0a02ad1ac06727471441",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/chunk_bulk_access.ml": "7ddb4a3bb35828259e87066c06842094515697d597644b0809cd02025b46cb4e",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/proofs/specs.ml": "76b65c70278dfb8e134b1b65d9f6c96ca9b62660d0cb560b9cae1168a3e67d3a",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/verify_regions.py": "aa19561913a0d878efae2328282fba4c6f42990988b69156108e14a3a96f97c1",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/blocks.py": "ba616f79a0d73a12e1a711d3154c658b2786f38cad8f908fdcf3241a60a1eb3a",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_memcpy_chunk8.o": "5fcf779986ee6d4b71a929006259f22708c14e680c072cc661dac5fabe9aae1e",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_0.o": "210c29119b644c830cfc85d971c4f57d30b367a02902eaeb2b740b5fb9a98eab",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_8.o": "e3d3a697143386d27dd213344f42c4e1de1ec57a2d57c3a949503d5c207080cb",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_16.o": "1778ae5f4b1080c1201c1c6e3c12f0744fdab8b0f9403223931166b9b8bbb513",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_24.o": "1dbf5bf99f67021559dd2e3a585d18762042d78fde6c81cf181a77098e362c0e",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_x3.o": "7b7aaa876e947936030419fc3256bc75f3d18d2d94f0ed529b9d0c18edac8571",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_indexed.o": "2a4bd96744db73f74ca119004a16ce230be0ec052f588fc75111faab5dd11221",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copybyte_indexed.o": "fe332aa353a6a8dad80b58ee9a70d53601305270ce11d2160a3f63f0c86428a9"
+  },
+  "elapsed_seconds": 254.2151417080313,
+  "timings": [
+    {
+      "name": "VP2_BLOCK_COPY8_0_CORRECT",
+      "cpu_seconds": 0.052473
+    },
+    {
+      "name": "VP2_BLOCK_COPY8_8_CORRECT",
+      "cpu_seconds": 0.054328
+    },
+    {
+      "name": "VP2_BLOCK_COPY8_16_CORRECT",
+      "cpu_seconds": 0.054844
+    },
+    {
+      "name": "VP2_BLOCK_COPY8_24_CORRECT",
+      "cpu_seconds": 0.057031
+    },
+    {
+      "name": "VP2_BLOCK_COPY8_X3_CORRECT",
+      "cpu_seconds": 0.0528
+    },
+    {
+      "name": "VP2_BLOCK_COPY8_INDEXED_CORRECT",
+      "cpu_seconds": 0.059474
+    },
+    {
+      "name": "VP2_BLOCK_COPYBYTE_INDEXED_CORRECT",
+      "cpu_seconds": 0.068592
+    },
+    {
+      "name": "module:blocks.ml",
+      "cpu_seconds": 1.511662
+    },
+    {
+      "name": "module:memcpy_chunk8.ml",
+      "cpu_seconds": 23.770048
+    },
+    {
+      "name": "module:chunk_access.ml",
+      "cpu_seconds": 27.467148
+    },
+    {
+      "name": "module:regions.ml",
+      "cpu_seconds": 1.834251
+    },
+    {
+      "name": "module:region_bounds.ml",
+      "cpu_seconds": 0.270501
+    },
+    {
+      "name": "module:region_split.ml",
+      "cpu_seconds": 0.318469
+    },
+    {
+      "name": "module:region_policy.ml",
+      "cpu_seconds": 0.065046
+    },
+    {
+      "name": "module:region_negatives.ml",
+      "cpu_seconds": 0.072151
+    },
+    {
+      "name": "module:region_calls.ml",
+      "cpu_seconds": 0.091383
+    }
+  ],
+  "load_cpu_seconds": 197.809655
+}

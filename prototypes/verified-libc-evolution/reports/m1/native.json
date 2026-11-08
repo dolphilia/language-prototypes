@@ -1,0 +1,14 @@
+{
+  "native": "native: 1109765 checks passed (seed 0x19273645, bounds/guards/ABI)",
+  "sentinel_mutation": "short-fast native sentinel: bytes 4..7 overwritten (contract violation)",
+  "seed": "0x19273645",
+  "functions": [
+    "baseline scalar",
+    "baseline exact-8",
+    "chunk8",
+    "fill"
+  ],
+  "alignment_pairs": "0..15 \u00d7 0..15 (all 64 modulo-8 pairs)",
+  "lengths": "baseline plus b+r, b=0,8,16,32,64,256,4096; r=0..7; page\u00b11",
+  "evidence_kind": "finite_native_tests"
+}

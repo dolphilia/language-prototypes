@@ -1,0 +1,27 @@
+python3 tools/verify.py
+make[1]: Nothing to be done for `p1-objects'.
+make[1]: Nothing to be done for `p2-objects'.
+make[1]: `build/test_memory' is up to date.
+make[1]: `build/probe_ret' is up to date.
+make[1]: `.deps/s2n-bignum/arm/generic/word_max.o' is up to date.
+make[1]: Nothing to be done for `bench-build'.
+P0: object and linked function both equal the proof target (4 bytes)
+objects and linked functions: exact spans match (vp_memcpy_scalar=32 bytes, vp_memcpy=64 bytes, vp_memset=28 bytes)
+primitives: checked 18 closed theorems, 6 expected rejections in 214.8s; no additional axioms
+P0: ret function called from C
+P0: object and linked function both equal the proof target (4 bytes)
+objects and linked functions: exact spans match (vp_memcpy_scalar=32 bytes, vp_memcpy=64 bytes, vp_memset=28 bytes)
+native: 70867 checks passed (seed 0x19273645, bounds/guards/ABI)
+native guard negatives rejected: {'overread': 'SIGBUS', 'overwrite': 'SIGBUS'}
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 0.117s
+
+OK
+driver-closed: checked 1 closed theorems, 0 expected rejections in 55.5s; no additional axioms
+.....
+----------------------------------------------------------------------
+Ran 5 tests in 279.219s
+
+OK
+verify: all gates passed in 496.4s; /Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/build/verification.json

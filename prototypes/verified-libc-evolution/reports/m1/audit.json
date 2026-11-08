@@ -1,0 +1,14 @@
+{
+  "scope": "M1 only",
+  "complete": true,
+  "timestamp": "2026-11-08T19:11:21.326571+00:00",
+  "proof_nonce": "f78f73ac008319dfae7dc23fe924c8ad6d73ef2800fa38d3",
+  "measurement_nonce": "972e032e806e0c8f27d67c9d96013d22136f28915a6d2b3a",
+  "cost_processes": 3,
+  "evidence_sha256": {
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m1/verification.json": "ca8d6e22b773555db2c81acee9db9b3437a11e7948dbae81ddc44dcabcc7782b",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m1/proof-costs.json": "0997cb0fbcc2879bb11c5539cee90c639d3149150b0a4f5a22d7021355c695f9",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m1/measurements.json": "33877638968c7117a1ac967f028d189b9601f98aea4dd6298ecc39dccbd22c6a",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m1/audit.md": "e1f5d0fdadb6b64d3c9085fe64ebf8823e5056c68b3227ff246fe969421b2152"
+  }
+}

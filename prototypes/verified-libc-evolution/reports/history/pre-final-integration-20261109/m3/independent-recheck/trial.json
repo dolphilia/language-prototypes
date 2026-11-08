@@ -1,0 +1,88 @@
+{
+  "timestamp": "2026-11-08T12:17:43.966894+00:00",
+  "nonce": "3dbace34ea4c2431fb4c239b",
+  "source_commit": "078839ea84531bd6c6cec9a58ebf69ba37149e0e",
+  "archive_sha256": "ea1f1c206d2dab033767786cc55a6bed1bdd3befc2f13b4bad8dfbfc0221d82a",
+  "seconds": 1.7447098339907825,
+  "inputs": {
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/independent_recheck.py": "c2351a8703d4d5d6f0c721082bb6892db719d08df10a0b06da8d22c7c018d959",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/deps.lock": "cf7b5c3fc079a302f4b69b7574df9d99fb4ef6f598390d0883791ac7b6d28578",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/proofs/probe_ret.ml": "4752657c0d068db3055f486e84d622d84fa838e3c3c9f4d1785b77b9b948d03a",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/build/probe_ret.o": "eb7fe2932e1056ef6866d36dbce0be7e82aa07214fc214988b90370edd717bc5",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/hol-light/Proofrecording/README": "893efe658ae693da82a9876b9732fca988dd21e12a5c293fb6fa30a36fdccfef",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/hol-light/Proofrecording/diffs/thm.ml": "0da34e59c1235425d85f865254d25daf35fe431d17fc2f4cfe1a545f50e4e542",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/hol-light/Proofrecording/diffs/hol.ml": "cba5a99aa55657f118f002b48420a7e40580edfcc7525a8a4b834ebb58a73b97"
+  },
+  "script_sha256": "856af0738fd960d2caaa9fd78c72ceeecce9bac69950ebf9ac9e7a9e129fc147",
+  "steps": [
+    {
+      "name": "name-tool",
+      "command": [
+        "opam",
+        "exec",
+        "--switch",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/ocaml",
+        "--",
+        "make",
+        "nametheorems.jar"
+      ],
+      "cwd": "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/recording-trials/3dbace34ea4c2431fb4c239b/Proofrecording/tools/src",
+      "returncode": 0,
+      "log": "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/independent-recheck/e6b-name-tool.log",
+      "output": "\\\n  javac NamedTheorem.java; \\\n  jar cvfe nametheorems.jar NamedTheorem NamedTheorem.class; \\\n  rm -f NamedTheorem.class\nノート:NamedTheorem.javaの操作は、未チェックまたは安全ではありません。\nノート:詳細は、-Xlint:uncheckedオプションを指定して再コンパイルしてください。\nマニフェストが追加されました\nNamedTheorem.classを追加中です(入=3609)(出=1990)(44%収縮されました)\n"
+    },
+    {
+      "name": "recording-build-after-jar",
+      "command": [
+        "opam",
+        "exec",
+        "--switch",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/ocaml",
+        "--",
+        "make"
+      ],
+      "cwd": "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/recording-trials/3dbace34ea4c2431fb4c239b/Proofrecording/hol_light",
+      "returncode": 2,
+      "log": "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/independent-recheck/e6b-recording-build-after-jar.log",
+      "output": "cp ../../*.ml .; \\\n          cp -f ../diffs/*.ml .; \\\n          java -jar ../tools/nametheorems.jar *.ml; \\\n          cp -f ../../pa_j_*.ml .; \\\n          rm *.ml.old\nconvert arith.ml ...\nconvert basics.ml ...\nconvert bignum_num.ml ...\nconvert bignum_zarith.ml ...\nconvert bool.ml ...\nconvert calc_int.ml ...\nwarning: ignoring 'pth' in calc_int.ml\nwarning: ignoring 'pth0' in calc_int.ml\nwarning: ignoring 'pth0' in calc_int.ml\nwarning: ignoring 'tth' in calc_int.ml\nwarning: ignoring 'pth' in calc_int.ml\nconvert calc_num.ml ...\nwarning: ignoring 'tth' in calc_num.ml\nwarning: ignoring 'pth' in calc_num.ml\nwarning: ignoring 'pth0' in calc_num.ml\nwarning: ignoring 'pth' in calc_num.ml\nwarning: ignoring 'pth_0' in calc_num.ml\nwarning: ignoring 'pth_base' in calc_num.ml\nconvert calc_rat.ml ...\nwarning: ignoring 'lemma' in calc_rat.ml\nwarning: ignoring 'pth' in calc_rat.ml\nwarning: ignoring 'pth' in calc_rat.ml\nwarning: ignoring 'pth' in calc_rat.ml\nwarning: ignoring 'pth' in calc_rat.ml\nwarning: ignoring 'pth' in calc_rat.ml\nwarning: ignoring 'pth' in calc_rat.ml\nwarning: ignoring 'pth1' in calc_rat.ml\nwarning: ignoring 'pth' in calc_rat.ml\nwarning: ignoring 'pth' in calc_rat.ml\nwarning: ignoring 'pth_nocancel' in calc_rat.ml\nwarning: ignoring 'pth' in calc_rat.ml\nwarning: ignoring 'pth' in calc_rat.ml\nconvert canon.ml ...\nwarning: ignoring 'pth' in canon.ml\nwarning: ignoring 'pth' in canon.ml\nwarning: ignoring 'pth' in canon.ml\nconvert cart.ml ...\nwarning: duplicate 'th' in cart.ml\nwarning: duplicate 'th' in cart.ml\nwarning: duplicate 'th' in cart.ml\nwarning: ignoring 'pth' in cart.ml\nconvert class.ml ...\nwarning: ignoring 'pth' in class.ml\nwarning: ignoring 'pth' in class.ml\nwarning: ignoring 'pth' in class.ml\nconvert compute.ml ...\nconvert database.ml ...\nconvert define.ml ...\nwarning: ignoring 'lemma' in define.ml\nwarning: ignoring 'pth' in define.ml\nwarning: ignoring 'pth_lexleft' in define.ml\nwarning: ignoring 'pth_lexright' in define.ml\nwarning: ignoring 'pth_measure' in define.ml\nconvert depgraph.ml ...\nconvert drule.ml ...\nconvert equal.ml ...\nconvert firstorder.ml ...\nconvert fusion.ml ...\nconvert grobner.ml ...\nwarning: ignoring 'pth_step' in grobner.ml\nconvert help.ml ...\nconvert hol.ml ...\nconvert hol_lib.ml ...\nconvert hol_lib_use_module.ml ...\nconvert hol_loader.ml ...\nconvert impconv.ml ...\nconvert ind_defs.ml ...\nwarning: ignoring 'pth' in ind_defs.ml\nconvert ind_types.ml ...\nwarning: ignoring 'pth' in ind_types.ml\nwarning: ignoring 'pth_0' in ind_types.ml\nconvert inline_load.ml ...\nconvert int.ml ...\nwarning: ignoring 'pth' in int.ml\nwarning: ignoring 'pth' in int.ml\nwarning: ignoring 'pth0' in int.ml\nwarning: ignoring 'pth0' in int.ml\nwarning: ignoring 'tth' in int.ml\nwarning: ignoring 'pth' in int.ml\nwarning: ignoring 'pth' in int.ml\nwarning: ignoring 'pth' in int.ml\nwarning: ignoring 'pth_relativize' in int.ml\nwarning: ignoring 'pth' in int.ml\nwarning: ignoring 'pth_relativize' in int.ml\nconvert itab.ml ...\nwarning: duplicate 'th' in itab.ml\nconvert iterate.ml ...\nwarning: ignoring 'lemma' in iterate.ml\nwarning: ignoring 'lemma' in iterate.ml\nwarning: ignoring 'lemma' in iterate.ml\nwarning: duplicate 'th' in iterate.ml\nwarning: ignoring 'lemma' in iterate.ml\nwarning: duplicate 'th' in iterate.ml\nconvert lib.ml ...\nconvert lists.ml ...\nwarning: ignoring 'pthc' in lists.ml\nwarning: ignoring 'pthc' in lists.ml\nwarning: ignoring 'pthc' in lists.ml\nwarning: ignoring 'pthc' in lists.ml\nconvert load_camlp4.ml ...\nconvert load_camlp5.ml ...\nconvert load_camlp5_topfind.ml ...\nconvert meson.ml ...\nconvert metis.ml ...\nconvert nets.ml ...\nconvert normalizer.ml ...\nwarning: duplicate 'sth' in normalizer.ml\nconvert nums.ml ...\nwarning: duplicate 'th' in nums.ml\nconvert pair.ml ...\nwarning: ignoring 'pth' in pair.ml\nwarning: ignoring 'pth' in pair.ml\nconvert parser.ml ...\nconvert preterm.ml ...\nconvert printer.ml ...\nconvert proofobjects_coq.ml ...\nconvert proofobjects_dummy.ml ...\nconvert proofobjects_init.ml ...\nconvert proofobjects_trt.ml ...\nconvert quot.ml ...\nwarning: ignoring 'pth' in quot.ml\nconvert real.ml ...\nwarning: ignoring 'lemma' in real.ml\nwarning: ignoring 'lemma' in real.ml\nconvert realarith.ml ...\nwarning: ignoring 'pth' in realarith.ml\nwarning: ignoring 'pth_abs' in realarith.ml\nconvert realax.ml ...\nwarning: ignoring 'lemma' in realax.ml\nwarning: ignoring 'lemma' in realax.ml\nconvert recursion.ml ...\nconvert sets.ml ...\nwarning: ignoring 'lemma' in sets.ml\nwarning: ignoring 'lem' in sets.ml\nwarning: ignoring 'lem' in sets.ml\nwarning: ignoring 'pth' in sets.ml\nconvert simp.ml ...\nconvert system.ml ...\nconvert tactics.ml ...\nconvert thecops.ml ...\nconvert theorems.ml ...\nconvert thm.ml ...\nconvert trivia.ml ...\nconvert wf.ml ...\nwarning: ignoring 'lemma1' in wf.ml\nwarning: ignoring 'pth' in wf.ml\nwarning: ignoring 'pth' in wf.ml\ndone. 2424 named proofs found.\ncp: ../../pa_j_*.ml: No such file or directory\nmake: *** No rule to make target `pa_j_3.07.ml', needed by `pa_j.ml'.  Stop.\n"
+    },
+    {
+      "name": "recording-startup",
+      "command": [
+        "opam",
+        "exec",
+        "--switch",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/ocaml",
+        "--",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/hol-light/ocaml-hol",
+        "-init",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/recording-trials/3dbace34ea4c2431fb4c239b/Proofrecording/hol_light/hol.ml",
+        "-I",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/recording-trials/3dbace34ea4c2431fb4c239b/Proofrecording/hol_light"
+      ],
+      "cwd": "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/recording-trials/3dbace34ea4c2431fb4c239b/Proofrecording/hol_light",
+      "returncode": 0,
+      "log": "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/independent-recheck/e6b-recording-startup.log",
+      "output": "OCaml version 5.1.0\nEnter #help;; for help.\n\nFile \"/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/recording-trials/3dbace34ea4c2431fb4c239b/Proofrecording/hol_light/hol.ml\", line 32, characters 14-16:\n32 |    v = \"3.10\" or v = \"3.11\"\n                   ^^\nError: Unbound value or\n# Line 1, characters 0-9:\n1 | load_path := \"/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/s2n-bignum\" :: !load_path;;\n    ^^^^^^^^^\nError: Unbound value load_path\n# Line 1, characters 0-5:\n1 | loadt \"/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/proofs/probe_ret.ml\";;\n    ^^^^^\nError: Unbound value loadt\nHint: Did you mean float?\n# Line 1, characters 7-15:\n1 | ignore(save_thm \"VE_RET_EXPORTED\" VP_PROBE_RET_CORRECT);;\n           ^^^^^^^^\nError: Unbound value save_thm\n# Line 1, characters 0-19:\n1 | export_saved_proofs (Some \"ve_ret\");;\n    ^^^^^^^^^^^^^^^^^^^\nError: Unbound value export_saved_proofs\n# "
+    }
+  ],
+  "missing_core_files": [
+    "type.ml",
+    "term.ml"
+  ],
+  "export_files": [],
+  "routes": [
+    "vendored Proofrecording EXTENDED XML",
+    "OpenTheory proof-logging HOL Light interface"
+  ],
+  "investigation_complete": true,
+  "independent_recheck_success": false,
+  "status": "reproducible source/runtime incompatibility in the pinned environment",
+  "positive_replay": "not reached: no proof was exported",
+  "corrupt_replay": "not reached: no proof or compatible independent checker was produced",
+  "remaining_work": [
+    "port recording to the current fusion.ml and Camlp5/OCaml interfaces",
+    "export definitions, types, axioms and all ARM-model dependencies",
+    "pin a compatible independent checker; replay positive and corrupted proofs"
+  ]
+}

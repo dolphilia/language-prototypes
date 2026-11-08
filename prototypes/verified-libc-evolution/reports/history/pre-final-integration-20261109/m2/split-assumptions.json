@@ -1,0 +1,44 @@
+{
+  "scope": "E3b: actual checked caller, one static direct BL to the unchanged M1 copy",
+  "claims": [
+    {
+      "claim": "arbitrary size_t split/n are checked before copying",
+      "target": "vp2_copy_split: caller 80 bytes, embedded copy 76 bytes; public functional/access contracts",
+      "logical_conditions": "non-NULL owned ordinary RAM of the supplied capacity L, nowrap and separated from code; separate valid aligned private stack of 16 bytes; initial entry registers and source snapshot",
+      "providers": "the caller supplies the owned root and stack; CBZ/CMP/unsigned branches establish 0 < split < L, n <= split and n <= L-split; arithmetic and containment theorems derive both subregions and the unchanged M1 copy preconditions",
+      "external_trust": "the actual region really has L live exclusive bytes; numeric checks alone do not establish physical mappings, lifetime or ownership; OS/allocator maintenance and root-to-memory correspondence remain external",
+      "evidence": ["proofs/split_specs.ml", "proofs/split_geometry.ml", "proofs/split_success.ml", "proofs/split_public.ml", "reports/m2/split-proof.json"],
+      "change": "dynamic split/n bounds are no longer caller preconditions; they are proved consequences of the actual successful machine path; validity of the supplied capacity still comes from the ownership root"
+    },
+    {
+      "claim": "success copies the initial prefix; failure returns 1 with the root unchanged and no data accesses",
+      "target": "all four rejection paths, successful call/return, conditional writable data frame and access trace",
+      "logical_conditions": "the same root/stack geometry; no successful-guard assumption in the public contract",
+      "providers": "actual branch/argument/SP/LR/BL/RET instructions, unchanged M1 functional and strong access theorems, containment and frame rules",
+      "external_trust": "architectural events are not a complete observation of caches/speculation/power; exact mapped code and the ISA/CPU relation remain assumptions",
+      "evidence": ["proofs/split_public.ml", "proofs/split_access.ml", "proofs/split_trace.ml", "reports/m2/split-verification.json"],
+      "change": "the failure path does not form the subregion, decrement SP, access data or call copy; successful stack and data effects are separated"
+    },
+    {
+      "claim": "actual machine success justifies E3a permission transitions for the same sizes",
+      "target": "ve_split_protocol_contract: actual postcondition plus status-zero implies the borrow/use/return protocol",
+      "logical_conditions": "one current sequential ghost ledger; root owner/epoch binds to the arena and its capacity; no invalidation or competing update during the operation",
+      "providers": "the machine return-status theorem implies the checked guard; E3a borrow, permission and return theorems construct the protocol for exactly val L, val split and val n",
+      "external_trust": "physical ownership correspondence and current-ledger discipline are not enforced by a general borrow checker in this prototype; HOL facts remain classical, not linear resources",
+      "evidence": ["proofs/split_protocol.ml", "proofs/region_split.ml", "proofs/regions.ml", "reports/m2/split-proof.json"],
+      "change": "entry conditions are now connected to actual branch results and the actual BL code; ghost ownership values add no runtime code or storage"
+    },
+    {
+      "claim": "malformed checks and argument construction have concrete violations",
+      "target": "five separately linked mutations: split range, input/output length, wrong subtraction, overlapping target",
+      "logical_conditions": "explicit loaded states satisfy the original public root/stack precondition; no guard is smuggled into that precondition; all extra numeric disjointness/alignment facts are proved closed",
+      "providers": "finite ARM executions and concrete initial-state witnesses; native normal controls, wrong-status/data observations and protected-page faults",
+      "external_trust": "native test harness and host CPU/OS; finite witnesses do not by themselves negate every general Hoare proposition",
+      "evidence": ["tools/split_mutations.py", "tools/split_witnesses.py", "proofs/split_witnesses.ml", "reports/m2/split-verification.json"],
+      "change": "a bad caller can violate the copy's preconditions even when the copy itself is proved; raw finite execution, not the inapplicable child theorem, supplies those counterexamples"
+    }
+  ],
+  "current_software_boundaries": ["restricted unverified artifact extraction", "unverified linked-span ingestion", "unverified OS loader", "current-ledger enforcement is not implemented as a language checker"],
+  "interpretation": "These current software boundaries can be reduced by further verification. They are not identified with mathematically unavoidable physical limits.",
+  "not_claimed": ["unconditional memory safety for a caller that lies about L", "allocator/OS verification", "general Rust or borrow-checker verification", "concurrent ownership enforcement", "verified general linker", "universal fastest code or physical real-time bound"]
+}

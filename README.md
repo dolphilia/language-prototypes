@@ -22,6 +22,7 @@
 - [unsafeを置き換えた後に、何が残るか](docs/notes/what-remains-of-unsafe.md)
 - [外部世界との接続だけが残る場合のunsafe](docs/notes/unsafe-as-external-contract.md)
 - [試作言語の一覧](prototypes/README.md)
+- [検証済みlibcの最小プロトタイプ](prototypes/verified-libc-minimal/README.md)
 - [Tane（たね）0.1 — 言語仕様と設計](prototypes/tane/README.md)
 - [Taneの参照実装](prototypes/tane/tane.py)
 - [Taneの実行例](prototypes/tane/README.md#実行例)

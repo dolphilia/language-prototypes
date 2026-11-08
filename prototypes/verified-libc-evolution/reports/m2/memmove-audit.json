@@ -1,0 +1,13 @@
+{
+  "scope": "E4 only",
+  "complete": true,
+  "timestamp": "2026-11-08T19:34:24.525863+00:00",
+  "proof_nonce": "af0ee96b05cf6ffac4b2d657fc7e3be5fce4aa9da8042567",
+  "measurement_nonce": "80afee76cb90da638307443406cb4e88dfde3343d70aa579",
+  "evidence_sha256": {
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m2/memmove-verification.json": "b5ba815384eac2a1b40b225a8875e8aaa0ca85b6a38d00f6ff6757848aaf721c",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m2/memmove-proof.json": "95b735fc68a7fde1dd1e4692ff6fdf9099f552560b55e6ab41ea02bb3499ff63",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m2/memmove-measurements.json": "e63f1059e133c76245f6bce396344426391145ab4e7c95637229b4d3a7015e17",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m2/memmove-audit.md": "0d3825affede655650341589e68d9712a6775f304ea9fdad49f271b185848b5b"
+  }
+}

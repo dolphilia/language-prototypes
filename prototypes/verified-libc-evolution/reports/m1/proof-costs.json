@@ -1,0 +1,830 @@
+{
+  "samples": 3,
+  "seconds": 650.943221708294,
+  "preparation": {
+    "initial_automated_prepare_seconds": 1.1509700841270387,
+    "scope": "automated initial edit/build operation, not human development time",
+    "source_sha256": {
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/generator/edits.ml": "f3927210ee77df1db80253465192cbf98dac7c3bc0e6aa5be9e30461705765c6",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/edit_specs.ml": "c006f1154a90edefb5b6f27a263c07e7af648842417810905367ccd31eb25cda",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/edit_experiments.py": "ddea34b8b535041093edd489e63e592a43fe184e5ed0747f6140765cd31e918d"
+    },
+    "experiments": [
+      {
+        "family": "offset",
+        "width": 16,
+        "offsets": [
+          0,
+          0
+        ],
+        "scratch": [
+          4,
+          4
+        ],
+        "direct_and_composed_identical": true,
+        "body_bytes": 20,
+        "source_files": [
+          "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_offset16.S",
+          "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_offset16_direct.S"
+        ],
+        "proof_children": [
+          "(0, 4)",
+          "(0, 4)"
+        ],
+        "new_child_theorems": 0,
+        "manual_per_edit_hints": 0,
+        "classification": "native counterexample + rejected proof attempts"
+      },
+      {
+        "family": "scratch",
+        "width": 16,
+        "offsets": [
+          0,
+          8
+        ],
+        "scratch": [
+          3,
+          4
+        ],
+        "direct_and_composed_identical": true,
+        "body_bytes": 20,
+        "source_files": [
+          "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_scratch16.S",
+          "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_scratch16_direct.S"
+        ],
+        "proof_children": [
+          "(0, 3)",
+          "(8, 4)"
+        ],
+        "new_child_theorems": 0,
+        "manual_per_edit_hints": 0,
+        "classification": "closed proofs"
+      },
+      {
+        "family": "frame",
+        "width": 16,
+        "offsets": [
+          0,
+          8
+        ],
+        "scratch": [
+          4,
+          4
+        ],
+        "direct_and_composed_identical": true,
+        "body_bytes": 20,
+        "source_files": [
+          "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_frame16.S",
+          "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_frame16_direct.S"
+        ],
+        "proof_children": [
+          "(0, 4)",
+          "(8, 4)"
+        ],
+        "new_child_theorems": 0,
+        "manual_per_edit_hints": 0,
+        "classification": "closed proofs"
+      },
+      {
+        "family": "offset",
+        "width": 32,
+        "offsets": [
+          0,
+          0,
+          16,
+          24
+        ],
+        "scratch": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "direct_and_composed_identical": true,
+        "body_bytes": 36,
+        "source_files": [
+          "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_offset32.S",
+          "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_offset32_direct.S"
+        ],
+        "proof_children": [
+          "(0, 4)",
+          "(0, 4)",
+          "(16, 4)",
+          "(24, 4)"
+        ],
+        "new_child_theorems": 0,
+        "manual_per_edit_hints": 0,
+        "classification": "native counterexample + rejected proof attempts"
+      },
+      {
+        "family": "scratch",
+        "width": 32,
+        "offsets": [
+          0,
+          8,
+          16,
+          24
+        ],
+        "scratch": [
+          3,
+          4,
+          4,
+          4
+        ],
+        "direct_and_composed_identical": true,
+        "body_bytes": 36,
+        "source_files": [
+          "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_scratch32.S",
+          "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_scratch32_direct.S"
+        ],
+        "proof_children": [
+          "(0, 3)",
+          "(8, 4)",
+          "(16, 4)",
+          "(24, 4)"
+        ],
+        "new_child_theorems": 0,
+        "manual_per_edit_hints": 0,
+        "classification": "closed proofs"
+      },
+      {
+        "family": "frame",
+        "width": 32,
+        "offsets": [
+          0,
+          8,
+          16,
+          24
+        ],
+        "scratch": [
+          4,
+          4,
+          4,
+          4
+        ],
+        "direct_and_composed_identical": true,
+        "body_bytes": 36,
+        "source_files": [
+          "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_frame32.S",
+          "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_frame32_direct.S"
+        ],
+        "proof_children": [
+          "(0, 4)",
+          "(8, 4)",
+          "(16, 4)",
+          "(24, 4)"
+        ],
+        "new_child_theorems": 0,
+        "manual_per_edit_hints": 0,
+        "classification": "closed proofs"
+      }
+    ],
+    "expected_rejections": [
+      "edit:offset16:composed",
+      "edit:offset16:direct",
+      "edit:frame-before-repair16:composed",
+      "edit:frame-before-repair16:direct",
+      "edit:offset32:composed",
+      "edit:offset32:direct",
+      "edit:frame-before-repair32:composed",
+      "edit:frame-before-repair32:direct"
+    ],
+    "expected_checks": [
+      "edit:scratch16:composed",
+      "edit:scratch16:direct",
+      "edit:frame16:composed",
+      "edit:frame16:direct",
+      "edit:scratch32:composed",
+      "edit:scratch32:direct",
+      "edit:frame32:composed",
+      "edit:frame32:direct"
+    ]
+  },
+  "proof_runs": [
+    {
+      "nonce": "bc07836fa554eaaae29d2035278a2bf779c7a7514b532521",
+      "checks": [
+        "vp2_block_copy8_0",
+        "vp2_block_copy8_8",
+        "vp2_block_copy8_16",
+        "vp2_block_copy8_24",
+        "vp2_block_copy8_x3",
+        "vp2_block_copy8_indexed",
+        "vp2_block_copybyte_indexed",
+        "vp2_copy16:composed",
+        "vp2_copy16:direct",
+        "vp2_copy32:composed",
+        "vp2_copy32:direct",
+        "vp2_copy16_x3:composed",
+        "edit:scratch16:composed",
+        "edit:scratch16:direct",
+        "edit:frame16:composed",
+        "edit:frame16:direct",
+        "edit:scratch32:composed",
+        "edit:scratch32:direct",
+        "edit:frame32:composed",
+        "edit:frame32:direct"
+      ],
+      "inputs": {
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/prover.py": "8c8a137c3ae34713d7c45dc7e71f9babfa747fc67608464c114cb3b3da4b6d1b",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/config.py": "6aff9555d8be8df4a253619cc7ab8645d2c5f61199793b2f0a81f7339f1b7fba",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/checks.ml": "d72a1c5dee0fa3aeee28a066b4960f6fe9be510f38a737aa5d261d035f43c9a8",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/deps.lock": "cf7b5c3fc079a302f4b69b7574df9d99fb4ef6f598390d0883791ac7b6d28578",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/deps.lock": "bb88ae59197f79d703e786eeb95b73109d569248ad4aa5a47316e77ab94a9954",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/opam-switch.export": "58d356ddd19d550db84aa58fdeb32c6394c64e990443011936e9da03afa65713",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/hol-light/ocaml-hol": "9c9528c9e88f6f56223de73f52db42884fe1f61a448fc71b607fbe8848926ec2",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/s2n-bignum/arm/generic/word_max.o": "35a3dd7f70b6d16ee378444624d6875ec38d295a57580aedf48b3c24339aace2",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/blocks.ml": "223cab06a848d2c844b127f60b9eb0e6d61cd25e1938dff1be561274b4cff5f3",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/composition.ml": "715f17eea9ac3b515a0cad494b9a9f241231ad7d24eb54c28f21115b7667bbab",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/edit-experiments.ml": "bda65105dc010321bee8365f2ec40e4fef8287ca3dcd814173844631b345db27",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/blocks.ml": "752fcaee81baeaf0107896451eccbde337f59664d2dc45ab0637334afe93e417",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/composition.ml": "26420c6d024d16bdb29c811aa1e8dbaadad2c4428bb90aa44847021da3376d3e",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/edit_specs.ml": "c006f1154a90edefb5b6f27a263c07e7af648842417810905367ccd31eb25cda",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/generator/main.ml": "d86ee0129daae73a2fc145972b5bdbab7a92d255e2dc03f7560cbe614c7577f6",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/generator/edits.ml": "f3927210ee77df1db80253465192cbf98dac7c3bc0e6aa5be9e30461705765c6",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/verify_costs.py": "1930fdbfecd3ab03f69ecc375475db3f5d98d0c27fbd3d9e42c6993bd44d50ba",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_8.o": "e3d3a697143386d27dd213344f42c4e1de1ec57a2d57c3a949503d5c207080cb",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copybyte_indexed.o": "fe332aa353a6a8dad80b58ee9a70d53601305270ce11d2160a3f63f0c86428a9",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_24.o": "1dbf5bf99f67021559dd2e3a585d18762042d78fde6c81cf181a77098e362c0e",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_0.o": "210c29119b644c830cfc85d971c4f57d30b367a02902eaeb2b740b5fb9a98eab",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_16.o": "1778ae5f4b1080c1201c1c6e3c12f0744fdab8b0f9403223931166b9b8bbb513",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_indexed.o": "2a4bd96744db73f74ca119004a16ce230be0ec052f588fc75111faab5dd11221",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_x3.o": "7b7aaa876e947936030419fc3256bc75f3d18d2d94f0ed529b9d0c18edac8571",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_copy16.o": "d3ac54b47d794534797ec0345a41bf57da6b314058af5bbb0e35db7ebff1cd8c",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_copy32_direct.o": "6189bfcbcb792a53b736e5b41c2069747b3197ab900997e7812c0a94f093cc39",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_copy16_direct.o": "3f1ef69bc7bb5ac4aa9bfe8eca60403e9a5a388dbad4ce028c1208303e10a4ae",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_copy16_x3.o": "fdea1acaa796e32914e09dab4d53c3ec137b9ba8ef0744609964fb5cfa3a1b2f",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_copy32.o": "118da9b3d31e3f3abc64f7f7946077f16bdd92431ebe14c91c23750f2d245209",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_scratch16_direct.o": "21e58a8593f43238ca6aa2e07f76c550eaa555d7c104c419bc3f6a746697acd5",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_frame16.o": "e8dc0de16416dd66dcab1485df1fad90bd6dd975a32cbbcf6177c1d93935e9e4",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_scratch16.o": "c19ce0bec6cc6427ce3098da8d62c9e006ff70b14551cdfe8bbda9ed75d8a941",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_scratch32_direct.o": "8b923e53a9965961f0c64cce62726270c551fa9208704c9a2faa53ce69227404",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_offset16.o": "79ba385fe71d24a6f328953767bdf0010c85de8ac2295811c64a9d44fbf8ea21",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_offset16_direct.o": "883bed627182bb5918b0ccda9ed4d9b9068f0f3000d417b84413b9c99c51d157",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_frame32.o": "d9acfd82751447a98f989b43bd25a991c089515ab6950a2520ef83e9079c571d",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_frame16_direct.o": "123c3cdaf8e07bc59a5031babf737d03cf9c24d666cff3ad16f275877a988ef8",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_offset32.o": "253afe581d2627bb66d04681b01587263c07feafc8163ca6f5fecc9f9eb28874",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_scratch32.o": "319745fe40a6154d182ab489b020e82884f6c67f5fd31e5dcc723e36e195bbeb",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_frame32_direct.o": "316f62654f447f1ccc0e46e81600d227e4942c86f4ec58a7884aaacd4bab9255",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_offset32_direct.o": "21296ad1d3eeb84988822e4145cb72153f13171132d5ebc9ef0f7b43f3d89e05"
+      },
+      "elapsed_seconds": 218.03104612464085,
+      "timings": [
+        {
+          "name": "VP2_BLOCK_COPY8_0_CORRECT",
+          "cpu_seconds": 0.055514
+        },
+        {
+          "name": "VP2_BLOCK_COPY8_8_CORRECT",
+          "cpu_seconds": 0.055355
+        },
+        {
+          "name": "VP2_BLOCK_COPY8_16_CORRECT",
+          "cpu_seconds": 0.056556
+        },
+        {
+          "name": "VP2_BLOCK_COPY8_24_CORRECT",
+          "cpu_seconds": 0.056732
+        },
+        {
+          "name": "VP2_BLOCK_COPY8_X3_CORRECT",
+          "cpu_seconds": 0.054387
+        },
+        {
+          "name": "VP2_BLOCK_COPY8_INDEXED_CORRECT",
+          "cpu_seconds": 0.061925
+        },
+        {
+          "name": "VP2_BLOCK_COPYBYTE_INDEXED_CORRECT",
+          "cpu_seconds": 0.067662
+        },
+        {
+          "name": "module:blocks.ml",
+          "cpu_seconds": 1.536451
+        },
+        {
+          "name": "VP2_COPY16_COMPOSED",
+          "cpu_seconds": 0.138209
+        },
+        {
+          "name": "VP2_COPY16_DIRECT",
+          "cpu_seconds": 0.139237
+        },
+        {
+          "name": "VP2_COPY32_COMPOSED",
+          "cpu_seconds": 0.336891
+        },
+        {
+          "name": "VP2_COPY32_DIRECT",
+          "cpu_seconds": 0.367862
+        },
+        {
+          "name": "VP2_COPY16_X3_COMPOSED",
+          "cpu_seconds": 0.155
+        },
+        {
+          "name": "module:composition.ml",
+          "cpu_seconds": 2.764887
+        },
+        {
+          "name": "VP2_EDIT_SCRATCH16_COMPOSED",
+          "cpu_seconds": 0.148683
+        },
+        {
+          "name": "VP2_EDIT_SCRATCH16_DIRECT",
+          "cpu_seconds": 0.152903
+        },
+        {
+          "name": "VP2_EDIT_FRAME16_COMPOSED",
+          "cpu_seconds": 0.13846
+        },
+        {
+          "name": "VP2_EDIT_FRAME16_DIRECT",
+          "cpu_seconds": 0.145249
+        },
+        {
+          "name": "VP2_EDIT_SCRATCH32_COMPOSED",
+          "cpu_seconds": 0.359078
+        },
+        {
+          "name": "VP2_EDIT_SCRATCH32_DIRECT",
+          "cpu_seconds": 0.378829
+        },
+        {
+          "name": "VP2_EDIT_FRAME32_COMPOSED",
+          "cpu_seconds": 0.33941
+        },
+        {
+          "name": "VP2_EDIT_FRAME32_DIRECT",
+          "cpu_seconds": 0.356624
+        },
+        {
+          "name": "module:edit-experiments.ml",
+          "cpu_seconds": 8.0177
+        }
+      ],
+      "load_cpu_seconds": 204.021858,
+      "rejections": [
+        {
+          "name": "edit:offset16:composed",
+          "cpu_seconds": 0.126907,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        },
+        {
+          "name": "edit:offset16:direct",
+          "cpu_seconds": 0.125568,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        },
+        {
+          "name": "edit:frame-before-repair16:composed",
+          "cpu_seconds": 0.158199,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        },
+        {
+          "name": "edit:frame-before-repair16:direct",
+          "cpu_seconds": 0.160593,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        },
+        {
+          "name": "edit:offset32:composed",
+          "cpu_seconds": 0.298084,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        },
+        {
+          "name": "edit:offset32:direct",
+          "cpu_seconds": 0.310181,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        },
+        {
+          "name": "edit:frame-before-repair32:composed",
+          "cpu_seconds": 0.353108,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        },
+        {
+          "name": "edit:frame-before-repair32:direct",
+          "cpu_seconds": 0.372407,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        }
+      ]
+    },
+    {
+      "nonce": "b1172c9627ad1b9757fe7fd1e9b78b149b329f11878f4be8",
+      "checks": [
+        "vp2_block_copy8_0",
+        "vp2_block_copy8_8",
+        "vp2_block_copy8_16",
+        "vp2_block_copy8_24",
+        "vp2_block_copy8_x3",
+        "vp2_block_copy8_indexed",
+        "vp2_block_copybyte_indexed",
+        "vp2_copy16:composed",
+        "vp2_copy16:direct",
+        "vp2_copy32:composed",
+        "vp2_copy32:direct",
+        "vp2_copy16_x3:composed",
+        "edit:scratch16:composed",
+        "edit:scratch16:direct",
+        "edit:frame16:composed",
+        "edit:frame16:direct",
+        "edit:scratch32:composed",
+        "edit:scratch32:direct",
+        "edit:frame32:composed",
+        "edit:frame32:direct"
+      ],
+      "inputs": {
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/prover.py": "8c8a137c3ae34713d7c45dc7e71f9babfa747fc67608464c114cb3b3da4b6d1b",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/config.py": "6aff9555d8be8df4a253619cc7ab8645d2c5f61199793b2f0a81f7339f1b7fba",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/checks.ml": "d72a1c5dee0fa3aeee28a066b4960f6fe9be510f38a737aa5d261d035f43c9a8",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/deps.lock": "cf7b5c3fc079a302f4b69b7574df9d99fb4ef6f598390d0883791ac7b6d28578",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/deps.lock": "bb88ae59197f79d703e786eeb95b73109d569248ad4aa5a47316e77ab94a9954",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/opam-switch.export": "58d356ddd19d550db84aa58fdeb32c6394c64e990443011936e9da03afa65713",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/hol-light/ocaml-hol": "9c9528c9e88f6f56223de73f52db42884fe1f61a448fc71b607fbe8848926ec2",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/s2n-bignum/arm/generic/word_max.o": "35a3dd7f70b6d16ee378444624d6875ec38d295a57580aedf48b3c24339aace2",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/blocks.ml": "223cab06a848d2c844b127f60b9eb0e6d61cd25e1938dff1be561274b4cff5f3",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/composition.ml": "715f17eea9ac3b515a0cad494b9a9f241231ad7d24eb54c28f21115b7667bbab",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/edit-experiments.ml": "bda65105dc010321bee8365f2ec40e4fef8287ca3dcd814173844631b345db27",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/blocks.ml": "752fcaee81baeaf0107896451eccbde337f59664d2dc45ab0637334afe93e417",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/composition.ml": "26420c6d024d16bdb29c811aa1e8dbaadad2c4428bb90aa44847021da3376d3e",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/edit_specs.ml": "c006f1154a90edefb5b6f27a263c07e7af648842417810905367ccd31eb25cda",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/generator/main.ml": "d86ee0129daae73a2fc145972b5bdbab7a92d255e2dc03f7560cbe614c7577f6",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/generator/edits.ml": "f3927210ee77df1db80253465192cbf98dac7c3bc0e6aa5be9e30461705765c6",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/verify_costs.py": "1930fdbfecd3ab03f69ecc375475db3f5d98d0c27fbd3d9e42c6993bd44d50ba",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_8.o": "e3d3a697143386d27dd213344f42c4e1de1ec57a2d57c3a949503d5c207080cb",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copybyte_indexed.o": "fe332aa353a6a8dad80b58ee9a70d53601305270ce11d2160a3f63f0c86428a9",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_24.o": "1dbf5bf99f67021559dd2e3a585d18762042d78fde6c81cf181a77098e362c0e",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_0.o": "210c29119b644c830cfc85d971c4f57d30b367a02902eaeb2b740b5fb9a98eab",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_16.o": "1778ae5f4b1080c1201c1c6e3c12f0744fdab8b0f9403223931166b9b8bbb513",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_indexed.o": "2a4bd96744db73f74ca119004a16ce230be0ec052f588fc75111faab5dd11221",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_x3.o": "7b7aaa876e947936030419fc3256bc75f3d18d2d94f0ed529b9d0c18edac8571",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_copy16.o": "d3ac54b47d794534797ec0345a41bf57da6b314058af5bbb0e35db7ebff1cd8c",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_copy32_direct.o": "6189bfcbcb792a53b736e5b41c2069747b3197ab900997e7812c0a94f093cc39",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_copy16_direct.o": "3f1ef69bc7bb5ac4aa9bfe8eca60403e9a5a388dbad4ce028c1208303e10a4ae",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_copy16_x3.o": "fdea1acaa796e32914e09dab4d53c3ec137b9ba8ef0744609964fb5cfa3a1b2f",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_copy32.o": "118da9b3d31e3f3abc64f7f7946077f16bdd92431ebe14c91c23750f2d245209",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_scratch16_direct.o": "21e58a8593f43238ca6aa2e07f76c550eaa555d7c104c419bc3f6a746697acd5",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_frame16.o": "e8dc0de16416dd66dcab1485df1fad90bd6dd975a32cbbcf6177c1d93935e9e4",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_scratch16.o": "c19ce0bec6cc6427ce3098da8d62c9e006ff70b14551cdfe8bbda9ed75d8a941",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_scratch32_direct.o": "8b923e53a9965961f0c64cce62726270c551fa9208704c9a2faa53ce69227404",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_offset16.o": "79ba385fe71d24a6f328953767bdf0010c85de8ac2295811c64a9d44fbf8ea21",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_offset16_direct.o": "883bed627182bb5918b0ccda9ed4d9b9068f0f3000d417b84413b9c99c51d157",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_frame32.o": "d9acfd82751447a98f989b43bd25a991c089515ab6950a2520ef83e9079c571d",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_frame16_direct.o": "123c3cdaf8e07bc59a5031babf737d03cf9c24d666cff3ad16f275877a988ef8",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_offset32.o": "253afe581d2627bb66d04681b01587263c07feafc8163ca6f5fecc9f9eb28874",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_scratch32.o": "319745fe40a6154d182ab489b020e82884f6c67f5fd31e5dcc723e36e195bbeb",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_frame32_direct.o": "316f62654f447f1ccc0e46e81600d227e4942c86f4ec58a7884aaacd4bab9255",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_offset32_direct.o": "21296ad1d3eeb84988822e4145cb72153f13171132d5ebc9ef0f7b43f3d89e05"
+      },
+      "elapsed_seconds": 218.12622316693887,
+      "timings": [
+        {
+          "name": "VP2_BLOCK_COPY8_0_CORRECT",
+          "cpu_seconds": 0.054424
+        },
+        {
+          "name": "VP2_BLOCK_COPY8_8_CORRECT",
+          "cpu_seconds": 0.052846
+        },
+        {
+          "name": "VP2_BLOCK_COPY8_16_CORRECT",
+          "cpu_seconds": 0.053458
+        },
+        {
+          "name": "VP2_BLOCK_COPY8_24_CORRECT",
+          "cpu_seconds": 0.053371
+        },
+        {
+          "name": "VP2_BLOCK_COPY8_X3_CORRECT",
+          "cpu_seconds": 0.051298
+        },
+        {
+          "name": "VP2_BLOCK_COPY8_INDEXED_CORRECT",
+          "cpu_seconds": 0.059247
+        },
+        {
+          "name": "VP2_BLOCK_COPYBYTE_INDEXED_CORRECT",
+          "cpu_seconds": 0.065512
+        },
+        {
+          "name": "module:blocks.ml",
+          "cpu_seconds": 1.489824
+        },
+        {
+          "name": "VP2_COPY16_COMPOSED",
+          "cpu_seconds": 0.134068
+        },
+        {
+          "name": "VP2_COPY16_DIRECT",
+          "cpu_seconds": 0.135388
+        },
+        {
+          "name": "VP2_COPY32_COMPOSED",
+          "cpu_seconds": 0.328302
+        },
+        {
+          "name": "VP2_COPY32_DIRECT",
+          "cpu_seconds": 0.34251
+        },
+        {
+          "name": "VP2_COPY16_X3_COMPOSED",
+          "cpu_seconds": 0.14652
+        },
+        {
+          "name": "module:composition.ml",
+          "cpu_seconds": 2.591146
+        },
+        {
+          "name": "VP2_EDIT_SCRATCH16_COMPOSED",
+          "cpu_seconds": 0.152603
+        },
+        {
+          "name": "VP2_EDIT_SCRATCH16_DIRECT",
+          "cpu_seconds": 0.146274
+        },
+        {
+          "name": "VP2_EDIT_FRAME16_COMPOSED",
+          "cpu_seconds": 0.140473
+        },
+        {
+          "name": "VP2_EDIT_FRAME16_DIRECT",
+          "cpu_seconds": 0.137797
+        },
+        {
+          "name": "VP2_EDIT_SCRATCH32_COMPOSED",
+          "cpu_seconds": 0.353738
+        },
+        {
+          "name": "VP2_EDIT_SCRATCH32_DIRECT",
+          "cpu_seconds": 0.377286
+        },
+        {
+          "name": "VP2_EDIT_FRAME32_COMPOSED",
+          "cpu_seconds": 0.332674
+        },
+        {
+          "name": "VP2_EDIT_FRAME32_DIRECT",
+          "cpu_seconds": 0.351364
+        },
+        {
+          "name": "module:edit-experiments.ml",
+          "cpu_seconds": 7.803019
+        }
+      ],
+      "load_cpu_seconds": 204.873644,
+      "rejections": [
+        {
+          "name": "edit:offset16:composed",
+          "cpu_seconds": 0.119043,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        },
+        {
+          "name": "edit:offset16:direct",
+          "cpu_seconds": 0.119141,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        },
+        {
+          "name": "edit:frame-before-repair16:composed",
+          "cpu_seconds": 0.154273,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        },
+        {
+          "name": "edit:frame-before-repair16:direct",
+          "cpu_seconds": 0.153684,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        },
+        {
+          "name": "edit:offset32:composed",
+          "cpu_seconds": 0.284523,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        },
+        {
+          "name": "edit:offset32:direct",
+          "cpu_seconds": 0.300773,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        },
+        {
+          "name": "edit:frame-before-repair32:composed",
+          "cpu_seconds": 0.351908,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        },
+        {
+          "name": "edit:frame-before-repair32:direct",
+          "cpu_seconds": 0.378002,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        }
+      ]
+    },
+    {
+      "nonce": "768dbb0317bb9b10c992a6fca04b016e3f407c874f30fde4",
+      "checks": [
+        "vp2_block_copy8_0",
+        "vp2_block_copy8_8",
+        "vp2_block_copy8_16",
+        "vp2_block_copy8_24",
+        "vp2_block_copy8_x3",
+        "vp2_block_copy8_indexed",
+        "vp2_block_copybyte_indexed",
+        "vp2_copy16:composed",
+        "vp2_copy16:direct",
+        "vp2_copy32:composed",
+        "vp2_copy32:direct",
+        "vp2_copy16_x3:composed",
+        "edit:scratch16:composed",
+        "edit:scratch16:direct",
+        "edit:frame16:composed",
+        "edit:frame16:direct",
+        "edit:scratch32:composed",
+        "edit:scratch32:direct",
+        "edit:frame32:composed",
+        "edit:frame32:direct"
+      ],
+      "inputs": {
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/prover.py": "8c8a137c3ae34713d7c45dc7e71f9babfa747fc67608464c114cb3b3da4b6d1b",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/config.py": "6aff9555d8be8df4a253619cc7ab8645d2c5f61199793b2f0a81f7339f1b7fba",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/checks.ml": "d72a1c5dee0fa3aeee28a066b4960f6fe9be510f38a737aa5d261d035f43c9a8",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/deps.lock": "cf7b5c3fc079a302f4b69b7574df9d99fb4ef6f598390d0883791ac7b6d28578",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/deps.lock": "bb88ae59197f79d703e786eeb95b73109d569248ad4aa5a47316e77ab94a9954",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/opam-switch.export": "58d356ddd19d550db84aa58fdeb32c6394c64e990443011936e9da03afa65713",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/hol-light/ocaml-hol": "9c9528c9e88f6f56223de73f52db42884fe1f61a448fc71b607fbe8848926ec2",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/s2n-bignum/arm/generic/word_max.o": "35a3dd7f70b6d16ee378444624d6875ec38d295a57580aedf48b3c24339aace2",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/blocks.ml": "223cab06a848d2c844b127f60b9eb0e6d61cd25e1938dff1be561274b4cff5f3",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/composition.ml": "715f17eea9ac3b515a0cad494b9a9f241231ad7d24eb54c28f21115b7667bbab",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/edit-experiments.ml": "bda65105dc010321bee8365f2ec40e4fef8287ca3dcd814173844631b345db27",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/blocks.ml": "752fcaee81baeaf0107896451eccbde337f59664d2dc45ab0637334afe93e417",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/composition.ml": "26420c6d024d16bdb29c811aa1e8dbaadad2c4428bb90aa44847021da3376d3e",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/edit_specs.ml": "c006f1154a90edefb5b6f27a263c07e7af648842417810905367ccd31eb25cda",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/generator/main.ml": "d86ee0129daae73a2fc145972b5bdbab7a92d255e2dc03f7560cbe614c7577f6",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/generator/edits.ml": "f3927210ee77df1db80253465192cbf98dac7c3bc0e6aa5be9e30461705765c6",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/verify_costs.py": "1930fdbfecd3ab03f69ecc375475db3f5d98d0c27fbd3d9e42c6993bd44d50ba",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_8.o": "e3d3a697143386d27dd213344f42c4e1de1ec57a2d57c3a949503d5c207080cb",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copybyte_indexed.o": "fe332aa353a6a8dad80b58ee9a70d53601305270ce11d2160a3f63f0c86428a9",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_24.o": "1dbf5bf99f67021559dd2e3a585d18762042d78fde6c81cf181a77098e362c0e",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_0.o": "210c29119b644c830cfc85d971c4f57d30b367a02902eaeb2b740b5fb9a98eab",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_16.o": "1778ae5f4b1080c1201c1c6e3c12f0744fdab8b0f9403223931166b9b8bbb513",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_indexed.o": "2a4bd96744db73f74ca119004a16ce230be0ec052f588fc75111faab5dd11221",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_x3.o": "7b7aaa876e947936030419fc3256bc75f3d18d2d94f0ed529b9d0c18edac8571",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_copy16.o": "d3ac54b47d794534797ec0345a41bf57da6b314058af5bbb0e35db7ebff1cd8c",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_copy32_direct.o": "6189bfcbcb792a53b736e5b41c2069747b3197ab900997e7812c0a94f093cc39",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_copy16_direct.o": "3f1ef69bc7bb5ac4aa9bfe8eca60403e9a5a388dbad4ce028c1208303e10a4ae",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_copy16_x3.o": "fdea1acaa796e32914e09dab4d53c3ec137b9ba8ef0744609964fb5cfa3a1b2f",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_copy32.o": "118da9b3d31e3f3abc64f7f7946077f16bdd92431ebe14c91c23750f2d245209",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_scratch16_direct.o": "21e58a8593f43238ca6aa2e07f76c550eaa555d7c104c419bc3f6a746697acd5",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_frame16.o": "e8dc0de16416dd66dcab1485df1fad90bd6dd975a32cbbcf6177c1d93935e9e4",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_scratch16.o": "c19ce0bec6cc6427ce3098da8d62c9e006ff70b14551cdfe8bbda9ed75d8a941",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_scratch32_direct.o": "8b923e53a9965961f0c64cce62726270c551fa9208704c9a2faa53ce69227404",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_offset16.o": "79ba385fe71d24a6f328953767bdf0010c85de8ac2295811c64a9d44fbf8ea21",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_offset16_direct.o": "883bed627182bb5918b0ccda9ed4d9b9068f0f3000d417b84413b9c99c51d157",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_frame32.o": "d9acfd82751447a98f989b43bd25a991c089515ab6950a2520ef83e9079c571d",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_frame16_direct.o": "123c3cdaf8e07bc59a5031babf737d03cf9c24d666cff3ad16f275877a988ef8",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_offset32.o": "253afe581d2627bb66d04681b01587263c07feafc8163ca6f5fecc9f9eb28874",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_scratch32.o": "319745fe40a6154d182ab489b020e82884f6c67f5fd31e5dcc723e36e195bbeb",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_frame32_direct.o": "316f62654f447f1ccc0e46e81600d227e4942c86f4ec58a7884aaacd4bab9255",
+        "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_edit_offset32_direct.o": "21296ad1d3eeb84988822e4145cb72153f13171132d5ebc9ef0f7b43f3d89e05"
+      },
+      "elapsed_seconds": 212.01564820902422,
+      "timings": [
+        {
+          "name": "VP2_BLOCK_COPY8_0_CORRECT",
+          "cpu_seconds": 0.054475
+        },
+        {
+          "name": "VP2_BLOCK_COPY8_8_CORRECT",
+          "cpu_seconds": 0.053558
+        },
+        {
+          "name": "VP2_BLOCK_COPY8_16_CORRECT",
+          "cpu_seconds": 0.054201
+        },
+        {
+          "name": "VP2_BLOCK_COPY8_24_CORRECT",
+          "cpu_seconds": 0.056001
+        },
+        {
+          "name": "VP2_BLOCK_COPY8_X3_CORRECT",
+          "cpu_seconds": 0.052211
+        },
+        {
+          "name": "VP2_BLOCK_COPY8_INDEXED_CORRECT",
+          "cpu_seconds": 0.059822
+        },
+        {
+          "name": "VP2_BLOCK_COPYBYTE_INDEXED_CORRECT",
+          "cpu_seconds": 0.067943
+        },
+        {
+          "name": "module:blocks.ml",
+          "cpu_seconds": 1.506763
+        },
+        {
+          "name": "VP2_COPY16_COMPOSED",
+          "cpu_seconds": 0.134742
+        },
+        {
+          "name": "VP2_COPY16_DIRECT",
+          "cpu_seconds": 0.136629
+        },
+        {
+          "name": "VP2_COPY32_COMPOSED",
+          "cpu_seconds": 0.321998
+        },
+        {
+          "name": "VP2_COPY32_DIRECT",
+          "cpu_seconds": 0.347562
+        },
+        {
+          "name": "VP2_COPY16_X3_COMPOSED",
+          "cpu_seconds": 0.149388
+        },
+        {
+          "name": "module:composition.ml",
+          "cpu_seconds": 2.625507
+        },
+        {
+          "name": "VP2_EDIT_SCRATCH16_COMPOSED",
+          "cpu_seconds": 0.14328
+        },
+        {
+          "name": "VP2_EDIT_SCRATCH16_DIRECT",
+          "cpu_seconds": 0.144787
+        },
+        {
+          "name": "VP2_EDIT_FRAME16_COMPOSED",
+          "cpu_seconds": 0.133876
+        },
+        {
+          "name": "VP2_EDIT_FRAME16_DIRECT",
+          "cpu_seconds": 0.137232
+        },
+        {
+          "name": "VP2_EDIT_SCRATCH32_COMPOSED",
+          "cpu_seconds": 0.337928
+        },
+        {
+          "name": "VP2_EDIT_SCRATCH32_DIRECT",
+          "cpu_seconds": 0.368193
+        },
+        {
+          "name": "VP2_EDIT_FRAME32_COMPOSED",
+          "cpu_seconds": 0.32639
+        },
+        {
+          "name": "VP2_EDIT_FRAME32_DIRECT",
+          "cpu_seconds": 0.339807
+        },
+        {
+          "name": "module:edit-experiments.ml",
+          "cpu_seconds": 7.684399
+        }
+      ],
+      "load_cpu_seconds": 199.069203,
+      "rejections": [
+        {
+          "name": "edit:offset16:composed",
+          "cpu_seconds": 0.122004,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        },
+        {
+          "name": "edit:offset16:direct",
+          "cpu_seconds": 0.123429,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        },
+        {
+          "name": "edit:frame-before-repair16:composed",
+          "cpu_seconds": 0.150546,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        },
+        {
+          "name": "edit:frame-before-repair16:direct",
+          "cpu_seconds": 0.156169,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        },
+        {
+          "name": "edit:offset32:composed",
+          "cpu_seconds": 0.288824,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        },
+        {
+          "name": "edit:offset32:direct",
+          "cpu_seconds": 0.293125,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        },
+        {
+          "name": "edit:frame-before-repair32:composed",
+          "cpu_seconds": 0.340326,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        },
+        {
+          "name": "edit:frame-before-repair32:direct",
+          "cpu_seconds": 0.363127,
+          "reason": "\"TAC_PROOF: Unsolved goals\""
+        }
+      ]
+    }
+  ],
+  "native": "12 objects checked for full-buffer content and X3 preservation",
+  "limitations": [
+    "CPU time, not human cognitive effort",
+    "no disk-cache flush; loaded separately in each process",
+    "first operation is automated preparation/build/check, not manual authoring time",
+    "same child theorems reused; no claim of a general reduction in development cost"
+  ]
+}

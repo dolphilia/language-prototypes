@@ -1,0 +1,84 @@
+{
+  "selected": "ve_opt_u2_mov",
+  "scores": {
+    "ve_opt_u1_eor": {
+      "score": 0.16077754752087237,
+      "ratios": [
+        0.21372191863995144,
+        0.13685556028973156,
+        0.13175516363293407
+      ],
+      "bytes": 76
+    },
+    "ve_opt_u1_mov": {
+      "score": 0.16180581698388252,
+      "ratios": [
+        0.21390607301559642,
+        0.13796335747763103,
+        0.13354802045842015
+      ],
+      "bytes": 76
+    },
+    "ve_opt_u2_eor": {
+      "score": 0.13485454256832238,
+      "ratios": [
+        0.15641874237937642,
+        0.11955040871934605,
+        0.12859447660624465
+      ],
+      "bytes": 88
+    },
+    "ve_opt_u2_mov": {
+      "score": 0.12733783516139557,
+      "ratios": [
+        0.15617106523821966,
+        0.09755265626332395,
+        0.12828978398264315
+      ],
+      "bytes": 88
+    }
+  },
+  "eligible_within_5_percent": [
+    "ve_opt_u2_mov"
+  ],
+  "frozen_sha256": "bd32df372ad239dca4e26ff7704411931a8c3d180bf769164621db30cfac8672",
+  "exploration_sha256": "c0ece0c9760cf3a584a3ae27c52e082de2b04869c449bb59cc62f52da78a8a7d",
+  "method_inputs": {
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/measure_search.py": "1fa59c1e84e3d7e6ddc8fe2c7fc1a104d4be964d932d4caa83b286cc12360951",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/benchmarks/search.c": "ffa17f2f0e91cff55eb034abcbbf1b6ef2261e5a6c2ce0fa1e73bf62aaf4df40",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/benchmarks/search_size.c": "9400b05b31b47ddebdc0981be6c5e1a5e100677ae4c1d297d479e9d6a54157ab",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/search-measurement-protocol.md": "c42f88e318d0b0a609451f033c6a0b8b390586071585a6f7226f7f8aa45a45bb",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/search-protocol.md": "e583fe4fce1a3e51f875341158f922bd9db5b728179a2303f5aabb4ab1503d3b",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/candidates.json": "bd32df372ad239dca4e26ff7704411931a8c3d180bf769164621db30cfac8672",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/build.py": "84516808700a669c864dfed65f556fe041897c07a7075fb84f7392cb1357e609",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/tools/macho.py": "0bb898e52b62b5e98de9c0c152e2577073c54d70c5108133f516c41cf6ceb56a"
+  },
+  "object_sha256": "465471cfcbd4ced5046fde0a5c05f485c93f93cbd8fa43b50d0f605f1f378fef",
+  "words": [
+    "0xd2800003",
+    "0xaa010004",
+    "0xf240089f",
+    "0x54000161",
+    "0xcb030044",
+    "0xf100409f",
+    "0x54000103",
+    "0xf8636824",
+    "0xf8236804",
+    "0x91002063",
+    "0xf8636824",
+    "0xf8236804",
+    "0x91002063",
+    "0x17fffff7",
+    "0xeb02007f",
+    "0x540000c2",
+    "0x38636824",
+    "0x38236804",
+    "0x91000463",
+    "0xeb02007f",
+    "0x54ffff83",
+    "0xd65f03c0"
+  ],
+  "rule": "minimum mean median candidate/scalar ratio at aligned 64/256/4096; within 5% prefer smaller body, then lower score",
+  "frozen_before_confirmation": true,
+  "confirmation_does_not_reselect": true
+}

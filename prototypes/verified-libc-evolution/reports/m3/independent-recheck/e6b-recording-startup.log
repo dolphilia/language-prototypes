@@ -1,0 +1,25 @@
+OCaml version 5.1.0
+Enter #help;; for help.
+
+File "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/recording-trials/1e70a61ce303782a21ad00e8/Proofrecording/hol_light/hol.ml", line 32, characters 14-16:
+32 |    v = "3.10" or v = "3.11"
+                   ^^
+Error: Unbound value or
+# Line 1, characters 0-9:
+1 | load_path := "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/s2n-bignum" :: !load_path;;
+    ^^^^^^^^^
+Error: Unbound value load_path
+# Line 1, characters 0-5:
+1 | loadt "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/proofs/probe_ret.ml";;
+    ^^^^^
+Error: Unbound value loadt
+Hint: Did you mean float?
+# Line 1, characters 7-15:
+1 | ignore(save_thm "VE_RET_EXPORTED" VP_PROBE_RET_CORRECT);;
+           ^^^^^^^^
+Error: Unbound value save_thm
+# Line 1, characters 0-19:
+1 | export_saved_proofs (Some "ve_ret");;
+    ^^^^^^^^^^^^^^^^^^^
+Error: Unbound value export_saved_proofs
+# 

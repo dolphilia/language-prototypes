@@ -1,0 +1,163 @@
+{
+  "scope": "M1 copy/fill trust boundary; later experiments are recorded separately below",
+  "logical": [
+    {
+      "id": "nonnull",
+      "claim": "dst and src are nonzero, including n=0",
+      "provider": "caller; unchanged public contract",
+      "status": "assumed"
+    },
+    {
+      "id": "bounds",
+      "claim": "dst+n and src+n do not exceed 2^64",
+      "provider": "caller; unchanged public contract",
+      "status": "assumed"
+    },
+    {
+      "id": "disjoint",
+      "claim": "input and output regions are disjoint",
+      "provider": "caller; unchanged public contract",
+      "status": "assumed"
+    },
+    {
+      "id": "code",
+      "claim": "aligned actual code bytes are loaded, output does not overlap code",
+      "provider": "caller/model precondition; object and linked-byte checks",
+      "status": "assumed-and-artifact-checked"
+    },
+    {
+      "id": "aligned8",
+      "claim": "the word path has both addresses aligned to 8 and a full remaining word",
+      "provider": "proved guard and loop invariant; not added to public precondition",
+      "status": "derived"
+    },
+    {
+      "id": "child-conditions",
+      "claim": "child code placement, register values, frame and bounded memory window hold at each composition",
+      "provider": "HOL subprogram/composition/while rules",
+      "status": "derived"
+    },
+    {
+      "id": "termination",
+      "claim": "each valid call reaches its return address in finitely many model steps",
+      "provider": "HOL while invariants and finite natural-number bound",
+      "status": "proved; real-time bound not claimed"
+    }
+  ],
+  "external": [
+    {
+      "id": "ram",
+      "claim": "data denotes mapped ordinary RAM of the required lifetime and permissions; writes are exclusive",
+      "provider": "caller, allocator and OS",
+      "status": "trusted external correspondence, not a predicate proving OS validity"
+    },
+    {
+      "id": "fetch",
+      "claim": "code is mapped executable and remains stable during execution",
+      "provider": "loader, OS and caller",
+      "status": "trusted external correspondence"
+    },
+    {
+      "id": "isa",
+      "claim": "pinned s2n-bignum ARM semantics corresponds to the executing CPU for the used forms",
+      "provider": "ISA model and hardware",
+      "status": "assumed physical correspondence; E6a provides finite differential evidence, not full ISA/CPU equivalence",
+      "evidence": "reports/m3/isa/README.md"
+    },
+    {
+      "id": "logic",
+      "claim": "HOL Light kernel, OCaml implementation, runtime and their build execute soundly",
+      "provider": "pinned proof environment",
+      "status": "trusted; only standard infinity, choice and eta axioms accepted"
+    },
+    {
+      "id": "specification",
+      "claim": "the independently written contracts express the intended copy/fill requirements",
+      "provider": "specification review and independent native references",
+      "status": "trusted requirements correspondence"
+    },
+    {
+      "id": "extraction",
+      "claim": "object import, Python Mach-O extraction and LLVM position listings identify the bytes that the OS executes",
+      "provider": "unverified tools and loader; exact-byte comparisons",
+      "status": "checked evidence plus remaining trust; not a verified linker"
+    },
+    {
+      "id": "native-tools",
+      "claim": "C harness, benchmark compiler, clock, counters and report aggregation behave as intended",
+      "provider": "native environment and testing tools",
+      "status": "finite supplemental evidence; not HOL proofs"
+    },
+    {
+      "id": "abi-return",
+      "claim": "the external caller provides an ABI-valid return target and invocation context",
+      "provider": "external caller and loader for the library entry; E5/E3b derive child return targets from proved BL instructions",
+      "status": "external correspondence; logical theorems quantify the model returnaddress without proving loader/ABI validity",
+      "evidence": "reports/m2/calls-audit.md; reports/m2/split-audit.md"
+    }
+  ],
+  "change_from_baseline": {
+    "removed_public_preconditions": [],
+    "new_public_preconditions": [],
+    "derived_internally": [
+      "word-path alignment",
+      "remaining >= 8",
+      "child placement and frame obligations"
+    ],
+    "additional_work": [
+      "byte/word correspondence",
+      "composition and loop proofs",
+      "mutant replay",
+      "new measurements and edit-cost experiments"
+    ],
+    "not_yet_derived": [
+      "OS/allocator ownership roots and their continued physical validity"
+    ],
+    "clarified_external_context": [
+      "ABI-valid return target for interpreting model return as a physical procedure return"
+    ]
+  },
+  "later_evidence": [
+    {
+      "scope": "E3a/E3b",
+      "claim": "derive call preconditions from a supplied owned arena, ledger and checked integer conditions",
+      "evidence": [
+        "reports/m2/regions.json",
+        "reports/m2/split-audit.md"
+      ],
+      "limit": "root authority, current-ledger/physical-memory correspondence and lifetime remain external"
+    },
+    {
+      "scope": "E5",
+      "claim": "static BL and linked caller correctness for two fixed layouts",
+      "evidence": [
+        "reports/m2/calls-audit.md"
+      ],
+      "limit": "restricted artifact check; not a general verified linker or OS loader"
+    },
+    {
+      "scope": "E6a",
+      "claim": "finite HOL/QEMU/native comparisons of the used M1 instruction forms",
+      "evidence": [
+        "reports/m3/isa/README.md"
+      ],
+      "limit": "not full semantic equivalence or all new E7 encodings"
+    },
+    {
+      "scope": "E7a",
+      "claim": "exact symbolic model steps and data byte amounts",
+      "evidence": [
+        "reports/m3/resources/README.md"
+      ],
+      "limit": "not elapsed-time bounds on physical hardware"
+    },
+    {
+      "scope": "E6b",
+      "claim": "independent-recheck feasibility investigation completed",
+      "evidence": [
+        "reports/m3/independent-recheck/README.md"
+      ],
+      "limit": "independent proof replay remains unachieved"
+    }
+  ]
+}

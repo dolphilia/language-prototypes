@@ -1,0 +1,31 @@
+{
+  "complete": true,
+  "scope": "E7b implementation/evaluation only; M3 integration excluded",
+  "selected": "ve_opt_u2_mov",
+  "counts": {
+    "scalar": {
+      "不明": 57,
+      "低速": 35,
+      "高速": 13
+    },
+    "original": {
+      "不明": 92,
+      "高速": 8,
+      "低速": 5
+    },
+    "libc": {
+      "低速": 75,
+      "不明": 21,
+      "高速": 9
+    }
+  },
+  "selection_sha256": "2fb5745188a6098d10b5dc09f91dfc5fa3e91a3b39936838fa1a7f81cbfd2513",
+  "evidence_sha256": {
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/search/pool-verification.json": "e65750a5d58d1dcb81bbb8b0f6bf6d9470e42981fdd310e26f9e4fe8262e2e82",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/search/selected-verification.json": "ea704b4b25e2fc27e976402fa5058e4eb52f1d6bc2612a181082333f0d653833",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/search/exploration.json": "c0ece0c9760cf3a584a3ae27c52e082de2b04869c449bb59cc62f52da78a8a7d",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/search/selection.json": "2fb5745188a6098d10b5dc09f91dfc5fa3e91a3b39936838fa1a7f81cbfd2513",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/search/confirmation.json": "63c42005aa2e62828522b58b4bc3ac24d9d12b698411d96352582d9d387ecaf9",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/search/README.md": "82ca825743924593939bc5c875315d5609790fb5325cb3ac3aa75e7092ee629a"
+  }
+}

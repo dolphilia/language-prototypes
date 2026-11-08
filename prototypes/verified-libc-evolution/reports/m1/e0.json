@@ -1,0 +1,190 @@
+{
+  "checks": [
+    "return:initial",
+    "return:prefix",
+    "return:numeric",
+    "return:execution",
+    "callee:initial",
+    "callee:prefix",
+    "callee:numeric",
+    "callee:execution",
+    "termination:initial",
+    "termination:prefix",
+    "termination:numeric",
+    "termination:execution",
+    "overread:initial",
+    "overread:prefix",
+    "overread:numeric",
+    "overread:execution",
+    "overwrite:initial",
+    "overwrite:prefix",
+    "overwrite:numeric",
+    "overwrite:execution",
+    "short_fast:initial",
+    "short_fast:prefix",
+    "short_fast:numeric",
+    "short_fast:execution",
+    "self_branch:initial",
+    "self_branch:prefix",
+    "self_branch:numeric",
+    "self_branch:execution",
+    "self_branch:stable",
+    "self_branch:nonreachability",
+    "equivalent:public"
+  ],
+  "fresh_session_seconds": 215.83494354132563,
+  "results": [
+    {
+      "candidate": "return",
+      "contract": "copy.return_value",
+      "status": "counterexample",
+      "evidence_kind": "hol_execution",
+      "model": "pinned s2n-bignum ARM",
+      "initial_state": "ve_initial ve_mut_return_mc 0",
+      "initial_numeric_contract": "checked",
+      "loaded_state": "checked",
+      "prefix_steps": 3,
+      "actual_object_sha256": "0cec8deb1f40740f8972c245ad338ad547a7b11b20d93c5b44cce299c52469e5",
+      "evidence": [
+        "e0-proof.json",
+        "return:numeric",
+        "return:initial",
+        "return:execution"
+      ],
+      "interpretation": "finite violation; termination mutant is an out-of-bounds witness, not a nontermination claim"
+    },
+    {
+      "candidate": "callee",
+      "contract": "copy.preserved_register",
+      "status": "counterexample",
+      "evidence_kind": "hol_execution",
+      "model": "pinned s2n-bignum ARM",
+      "initial_state": "ve_initial ve_mut_callee_mc 0",
+      "initial_numeric_contract": "checked",
+      "loaded_state": "checked",
+      "prefix_steps": 3,
+      "actual_object_sha256": "29d2b4adf9a5d672fa9350039f57020d20de5c204109ccbc21482a87ae04a3c8",
+      "evidence": [
+        "e0-proof.json",
+        "callee:numeric",
+        "callee:initial",
+        "callee:execution"
+      ],
+      "interpretation": "finite violation; termination mutant is an out-of-bounds witness, not a nontermination claim"
+    },
+    {
+      "candidate": "termination",
+      "contract": "copy.access_bounds",
+      "status": "counterexample",
+      "evidence_kind": "hol_execution",
+      "model": "pinned s2n-bignum ARM",
+      "initial_state": "ve_initial ve_mut_termination_mc 1",
+      "initial_numeric_contract": "checked",
+      "loaded_state": "checked",
+      "prefix_steps": 8,
+      "actual_object_sha256": "972b2c97eca8802c293fb62fd8a542d4e13cd1b321216823e8ddc5f7df5c4032",
+      "evidence": [
+        "e0-proof.json",
+        "termination:numeric",
+        "termination:initial",
+        "termination:execution"
+      ],
+      "interpretation": "finite violation; termination mutant is an out-of-bounds witness, not a nontermination claim"
+    },
+    {
+      "candidate": "overread",
+      "contract": "copy.access_bounds",
+      "status": "counterexample",
+      "evidence_kind": "hol_execution",
+      "model": "pinned s2n-bignum ARM",
+      "initial_state": "ve_initial ve_mut_overread_mc 1",
+      "initial_numeric_contract": "checked",
+      "loaded_state": "checked",
+      "prefix_steps": 3,
+      "actual_object_sha256": "7b8eadde7fc49df2b4c4e4c8cdec392ebc78ee7241c15bc6216f86f439ee4582",
+      "evidence": [
+        "e0-proof.json",
+        "overread:numeric",
+        "overread:initial",
+        "overread:execution"
+      ],
+      "interpretation": "finite violation; termination mutant is an out-of-bounds witness, not a nontermination claim"
+    },
+    {
+      "candidate": "overwrite",
+      "contract": "copy.access_bounds",
+      "status": "counterexample",
+      "evidence_kind": "hol_execution",
+      "model": "pinned s2n-bignum ARM",
+      "initial_state": "ve_initial ve_mut_overwrite_mc 1",
+      "initial_numeric_contract": "checked",
+      "loaded_state": "checked",
+      "prefix_steps": 4,
+      "actual_object_sha256": "19023075daea2b54672d5c6ecbf63bcd3dca2ec053c70bfad090b686e945cee1",
+      "evidence": [
+        "e0-proof.json",
+        "overwrite:numeric",
+        "overwrite:initial",
+        "overwrite:execution"
+      ],
+      "interpretation": "finite violation; termination mutant is an out-of-bounds witness, not a nontermination claim"
+    },
+    {
+      "candidate": "short_fast",
+      "contract": "copy.access_bounds",
+      "status": "counterexample",
+      "evidence_kind": "hol_execution",
+      "model": "pinned s2n-bignum ARM",
+      "initial_state": "ve_initial ve_mut_short_fast_mc 4",
+      "initial_numeric_contract": "checked",
+      "loaded_state": "checked",
+      "prefix_steps": 6,
+      "actual_object_sha256": "62a4649a72b9dac346db5f74a4917a0e82f9d19606e5d8b6addc7d9b3548a0b6",
+      "evidence": [
+        "e0-proof.json",
+        "short_fast:numeric",
+        "short_fast:initial",
+        "short_fast:execution"
+      ],
+      "interpretation": "finite violation; termination mutant is an out-of-bounds witness, not a nontermination claim"
+    },
+    {
+      "candidate": "self_branch",
+      "contract": "copy.termination",
+      "status": "counterexample",
+      "evidence_kind": "hol_execution",
+      "model": "pinned s2n-bignum ARM",
+      "initial_state": "ve_initial ve_mut_self_branch_mc 0",
+      "initial_numeric_contract": "checked",
+      "loaded_state": "checked",
+      "prefix_steps": 2,
+      "actual_object_sha256": "197f36683af46fa1dbbe51b1e6dee66ed4e5ccce5dcd7819b9ab552bf6c39d68",
+      "evidence": [
+        "e0-proof.json",
+        "self_branch:numeric",
+        "self_branch:initial",
+        "self_branch:execution"
+      ],
+      "interpretation": "PC/code invariant proves nonreachability after the checked prefix"
+    },
+    {
+      "candidate": "equivalent",
+      "contract": "vp_copy_contract",
+      "status": "proved",
+      "evidence_kind": "hol_closed_theorem",
+      "evidence": [
+        "e0-proof.json",
+        "equivalent:public"
+      ]
+    }
+  ],
+  "driver_tests": 5,
+  "classification_tests": 3,
+  "artifact_tests": 3,
+  "external_trust": [
+    "HOL Light/OCaml kernel execution",
+    "ISA semantics versus physical CPU",
+    "caller valid exclusive ordinary RAM and mapping lifetime"
+  ],
+  "scope": "E0, not completion of M1/M2/M3"
+}

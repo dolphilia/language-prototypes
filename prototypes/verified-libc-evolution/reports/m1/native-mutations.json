@@ -1,0 +1,38 @@
+[
+  {
+    "name": "short-word",
+    "outcome": "SIGBUS",
+    "control_return": 7,
+    "evidence_kind": "native_supplement"
+  },
+  {
+    "name": "extra-word",
+    "outcome": "SIGBUS",
+    "control_return": 7,
+    "evidence_kind": "native_supplement"
+  },
+  {
+    "name": "missing-tail",
+    "outcome": "one-byte copy returned without copying byte 0",
+    "control_return": 6,
+    "evidence_kind": "native_supplement"
+  },
+  {
+    "name": "return",
+    "outcome": "non-NULL destination but returned NULL",
+    "control_return": 4,
+    "evidence_kind": "native_supplement"
+  },
+  {
+    "name": "frame",
+    "outcome": "saved-register check detected corruption",
+    "control_return": 5,
+    "evidence_kind": "native_supplement"
+  },
+  {
+    "name": "decrease",
+    "outcome": "SIGBUS",
+    "control_return": 7,
+    "evidence_kind": "native_supplement"
+  }
+]

@@ -1,0 +1,816 @@
+{
+  "schema": 1,
+  "plan": "docs/plans/verified-libc-evolution/README.md",
+  "scope": "M1, M2, M3; no completion inferred from partial work",
+  "requirements": [
+    {
+      "id": "B0.source_identity",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "B0.fresh_baseline_verify",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "B0.environment_record",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "B0.evaluation_protocol",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E0.six_model_counterexamples",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E0.self_branch_nonreachability",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E0.valid_rewrite",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E0.invalid_precondition_rejection",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E0.result_classification",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E0.driver_failure_tests",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E1.code_theorem_binding",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E1.copy8_offset_blocks",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E1.copy16_composition",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E1.copy32_composition",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E1.byte_identity",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E1.register_substitution",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E1.sequence_branch_loop_rules",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E1.composition_negative_cases",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E2.same_public_contract",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E2.arbitrary_length_functional_termination_frame",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E2.arbitrary_length_accesses",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E2.zero_and_alignment",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E2.object_and_linked_identity",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E2.native_boundaries_alignments_abi",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E2.mutation_witnesses",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E2.body_budget_256_no_stack_heap_ghost",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E2.seven_run_measurements",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E2.three_run_proof_and_edit_costs",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E2.m1_commands_and_audit",
+      "status": "complete",
+      "evidence": [
+        "reports/m1/verification.json",
+        "reports/m1/proof-costs.json",
+        "reports/m1/measurements.json",
+        "reports/assumptions.json",
+        "reports/m1/audit.md"
+      ]
+    },
+    {
+      "id": "E3a.region_permissions_and_lifetimes",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/regions.md",
+        "reports/m2/regions.json",
+        "reports/m2/regions-proof.json",
+        "tools/verify_regions.py"
+      ]
+    },
+    {
+      "id": "E3a.checked_split_contract",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/regions.md",
+        "reports/m2/regions.json",
+        "reports/m2/regions-proof.json",
+        "tools/verify_regions.py"
+      ]
+    },
+    {
+      "id": "E3a.derive_kernel_preconditions",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/regions.md",
+        "reports/m2/regions.json",
+        "reports/m2/regions-proof.json",
+        "tools/verify_regions.py"
+      ]
+    },
+    {
+      "id": "E3a.ownership_negative_cases",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/regions.md",
+        "reports/m2/regions.json",
+        "reports/m2/regions-proof.json",
+        "tools/verify_regions.py"
+      ]
+    },
+    {
+      "id": "E3a.external_roots_ledger",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/regions.md",
+        "reports/m2/regions.json",
+        "reports/m2/regions-proof.json",
+        "tools/verify_regions.py"
+      ]
+    },
+    {
+      "id": "E4.independent_overlap_spec",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/memmove-audit.md",
+        "reports/m2/memmove-verification.json",
+        "reports/m2/memmove-measurements.json"
+      ]
+    },
+    {
+      "id": "E4.forward_backward_proofs",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/memmove-audit.md",
+        "reports/m2/memmove-verification.json",
+        "reports/m2/memmove-measurements.json"
+      ]
+    },
+    {
+      "id": "E4.frame_accesses_termination_abi",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/memmove-audit.md",
+        "reports/m2/memmove-verification.json",
+        "reports/m2/memmove-measurements.json"
+      ]
+    },
+    {
+      "id": "E4.overlap_native_cases",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/memmove-audit.md",
+        "reports/m2/memmove-verification.json",
+        "reports/m2/memmove-measurements.json"
+      ]
+    },
+    {
+      "id": "E4.mutation_counterexamples",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/memmove-audit.md",
+        "reports/m2/memmove-verification.json",
+        "reports/m2/memmove-measurements.json"
+      ]
+    },
+    {
+      "id": "E4.leaf_body_budget_256",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/memmove-audit.md",
+        "reports/m2/memmove-verification.json",
+        "reports/m2/memmove-measurements.json"
+      ]
+    },
+    {
+      "id": "E4.measurements",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/memmove-audit.md",
+        "reports/m2/memmove-verification.json",
+        "reports/m2/memmove-measurements.json"
+      ]
+    },
+    {
+      "id": "E5.single_direct_call_relocation_whitelist",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/calls-audit.md",
+        "reports/m2/calls-verification.json",
+        "reports/m2/calls-measurements.json"
+      ]
+    },
+    {
+      "id": "E5.linked_code_and_target_proof",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/calls-audit.md",
+        "reports/m2/calls-verification.json",
+        "reports/m2/calls-measurements.json"
+      ]
+    },
+    {
+      "id": "E5.quantified_common_slide",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/calls-audit.md",
+        "reports/m2/calls-verification.json",
+        "reports/m2/calls-measurements.json"
+      ]
+    },
+    {
+      "id": "E5.two_link_layouts",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/calls-audit.md",
+        "reports/m2/calls-verification.json",
+        "reports/m2/calls-measurements.json"
+      ]
+    },
+    {
+      "id": "E5.stack_16_restoration_and_separation",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/calls-audit.md",
+        "reports/m2/calls-verification.json",
+        "reports/m2/calls-measurements.json"
+      ]
+    },
+    {
+      "id": "E5.wrong_target_and_stack_rejection",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/calls-audit.md",
+        "reports/m2/calls-verification.json",
+        "reports/m2/calls-measurements.json"
+      ]
+    },
+    {
+      "id": "E5.native_calls_and_measurements",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/calls-audit.md",
+        "reports/m2/calls-verification.json",
+        "reports/m2/calls-measurements.json"
+      ]
+    },
+    {
+      "id": "E3b.executable_copy_split",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/split-audit.md",
+        "reports/m2/split-verification.json",
+        "reports/m2/split-measurements.json"
+      ]
+    },
+    {
+      "id": "E3b.runtime_checks_and_failure_arena_preservation",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/split-audit.md",
+        "reports/m2/split-verification.json",
+        "reports/m2/split-measurements.json"
+      ]
+    },
+    {
+      "id": "E3b.region_to_machine_connection",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/split-audit.md",
+        "reports/m2/split-verification.json",
+        "reports/m2/split-measurements.json"
+      ]
+    },
+    {
+      "id": "E3b.all_path_safety_termination_abi",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/split-audit.md",
+        "reports/m2/split-verification.json",
+        "reports/m2/split-measurements.json"
+      ]
+    },
+    {
+      "id": "E3b.invalid_size_native_cases",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/split-audit.md",
+        "reports/m2/split-verification.json",
+        "reports/m2/split-measurements.json"
+      ]
+    },
+    {
+      "id": "E3b.wrapper_costs",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/split-audit.md",
+        "reports/m2/split-verification.json",
+        "reports/m2/split-measurements.json"
+      ]
+    },
+    {
+      "id": "E3b.m2_commands_and_audit",
+      "status": "complete",
+      "evidence": [
+        "reports/m2/audit.md",
+        "reports/m2/verification.json",
+        "tools/entry.py",
+        "tools/phase_m2.py"
+      ]
+    },
+    {
+      "id": "E6a.independent_backend_pinned",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/isa/verification.json",
+        "reports/m3/isa/README.md",
+        "isa-backend.lock.json",
+        "tools/audit_isa.py"
+      ]
+    },
+    {
+      "id": "E6a.all_instruction_forms",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/isa/verification.json",
+        "reports/m3/isa/README.md",
+        "isa-backend.lock.json",
+        "tools/audit_isa.py"
+      ]
+    },
+    {
+      "id": "E6a.32_edge_256_seeded_per_form",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/isa/verification.json",
+        "reports/m3/isa/README.md",
+        "isa-backend.lock.json",
+        "tools/audit_isa.py"
+      ]
+    },
+    {
+      "id": "E6a.hol_backend_native_comparison",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/isa/verification.json",
+        "reports/m3/isa/README.md",
+        "isa-backend.lock.json",
+        "tools/audit_isa.py"
+      ]
+    },
+    {
+      "id": "E6a.resolve_mismatches",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/isa/verification.json",
+        "reports/m3/isa/README.md",
+        "isa-backend.lock.json",
+        "tools/audit_isa.py"
+      ]
+    },
+    {
+      "id": "E6a.limits_and_reproduction",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/isa/verification.json",
+        "reports/m3/isa/README.md",
+        "isa-backend.lock.json",
+        "tools/audit_isa.py"
+      ]
+    },
+    {
+      "id": "E6b.two_routes_comparison",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/independent-recheck/README.md",
+        "reports/m3/independent-recheck/trial.json",
+        "tools/independent_recheck.py"
+      ]
+    },
+    {
+      "id": "E6b.ret_proof_export_attempt",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/independent-recheck/README.md",
+        "reports/m3/independent-recheck/trial.json",
+        "tools/independent_recheck.py"
+      ]
+    },
+    {
+      "id": "E6b.definitions_types_axioms_mapping",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/independent-recheck/README.md",
+        "reports/m3/independent-recheck/trial.json",
+        "tools/independent_recheck.py"
+      ]
+    },
+    {
+      "id": "E6b.positive_and_corrupt_or_reproducible_incompatibility",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/independent-recheck/README.md",
+        "reports/m3/independent-recheck/trial.json",
+        "tools/independent_recheck.py"
+      ]
+    },
+    {
+      "id": "E6b.feasibility_report_distinct_from_success",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/independent-recheck/README.md",
+        "reports/m3/independent-recheck/trial.json",
+        "tools/independent_recheck.py"
+      ]
+    },
+    {
+      "id": "E7a.baseline_exact_costs",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/resources/verification.json",
+        "proofs/costs.ml",
+        "proofs/resource_chunk.ml",
+        "tools/resource_mutations.py"
+      ]
+    },
+    {
+      "id": "E7a.optimized_exact_costs",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/resources/verification.json",
+        "proofs/costs.ml",
+        "proofs/resource_chunk.ml",
+        "tools/resource_mutations.py"
+      ]
+    },
+    {
+      "id": "E7a.data_access_byte_costs",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/resources/verification.json",
+        "proofs/costs.ml",
+        "proofs/resource_chunk.ml",
+        "tools/resource_mutations.py"
+      ]
+    },
+    {
+      "id": "E7a.cost_mutation_rejection",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/resources/verification.json",
+        "proofs/costs.ml",
+        "proofs/resource_chunk.ml",
+        "tools/resource_mutations.py"
+      ]
+    },
+    {
+      "id": "E7b.finite_4_to_8_candidates",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/search/README.md",
+        "reports/m3/search/audit.json"
+      ]
+    },
+    {
+      "id": "E7b.new_proved_candidate",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/search/README.md",
+        "reports/m3/search/audit.json"
+      ]
+    },
+    {
+      "id": "E7b.bad_candidate_rejection",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/search/README.md",
+        "reports/m3/search/audit.json"
+      ]
+    },
+    {
+      "id": "E7b.same_contract_and_resource_gate",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/search/README.md",
+        "reports/m3/search/audit.json"
+      ]
+    },
+    {
+      "id": "E7b.frozen_selection_protocol",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/search/README.md",
+        "reports/m3/search/audit.json"
+      ]
+    },
+    {
+      "id": "E7b.independent_confirmation",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/search/README.md",
+        "reports/m3/search/audit.json"
+      ]
+    },
+    {
+      "id": "E7b.search_costs_and_unknowns",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/search/README.md",
+        "reports/m3/search/audit.json"
+      ]
+    },
+    {
+      "id": "E7b.m3_commands_and_audit",
+      "status": "complete",
+      "evidence": [
+        "reports/m3/audit.md",
+        "reports/m3/verification.json",
+        "tools/phase_m3.py"
+      ]
+    },
+    {
+      "id": "ALL.assumption_providers_and_changes",
+      "status": "complete",
+      "evidence": [
+        "reports/verification-all.json",
+        "reports/audit.md",
+        "reports/trust-boundaries.md",
+        "README.md"
+      ]
+    },
+    {
+      "id": "ALL.verify_all",
+      "status": "complete",
+      "evidence": [
+        "reports/verification-all.json",
+        "reports/audit.md",
+        "reports/trust-boundaries.md",
+        "README.md"
+      ]
+    },
+    {
+      "id": "ALL.setup_and_readme",
+      "status": "complete",
+      "evidence": [
+        "reports/verification-all.json",
+        "reports/audit.md",
+        "reports/trust-boundaries.md",
+        "README.md"
+      ]
+    },
+    {
+      "id": "ALL.requirement_by_requirement_audit",
+      "status": "complete",
+      "evidence": [
+        "reports/verification-all.json",
+        "reports/audit.md",
+        "reports/trust-boundaries.md",
+        "README.md"
+      ]
+    }
+  ]
+}

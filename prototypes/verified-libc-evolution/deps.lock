@@ -1,0 +1,16 @@
+{
+  "hol-light": {
+    "url": "https://github.com/jrh13/hol-light.git",
+    "commit": "078839ea84531bd6c6cec9a58ebf69ba37149e0e"
+  },
+  "s2n-bignum": {
+    "url": "https://github.com/awslabs/s2n-bignum.git",
+    "commit": "b4f17ee743ebc9b53a26c3cd1908f50f0658314f"
+  },
+  "ocaml-system": "5.1.0",
+  "camlp5": "8.03.06",
+  "shared_root": "../verified-libc-minimal/.deps",
+  "baseline_lock_sha256": "bb88ae59197f79d703e786eeb95b73109d569248ad4aa5a47316e77ab94a9954",
+  "ocaml_export_sha256": "58d356ddd19d550db84aa58fdeb32c6394c64e990443011936e9da03afa65713",
+  "extra_backends": {}
+}

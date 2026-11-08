@@ -1,0 +1,42 @@
+{
+  "command": [
+    "/opt/homebrew/bin/qemu-system-aarch64",
+    "-machine",
+    "virt",
+    "-cpu",
+    "cortex-a72",
+    "-accel",
+    "tcg",
+    "-m",
+    "128M",
+    "-display",
+    "none",
+    "-serial",
+    "none",
+    "-monitor",
+    "none",
+    "-nic",
+    "none",
+    "-nodefaults",
+    "-S",
+    "-gdb",
+    "stdio"
+  ],
+  "backend_version": "QEMU emulator version 10.1.0",
+  "binary": "/opt/homebrew/Cellar/qemu/10.1.0/bin/qemu-system-aarch64",
+  "binary_sha256": "b27ed0e029cfbd452be5a440139d8ff84d473353c8694521888d609ef8a244ce",
+  "features": "PacketSize=1000;qXfer:features:read+;vContSupported+;multiprocess+",
+  "target_xml": "l<?xml version=\"1.0\"?><!DOCTYPE target SYSTEM \"gdb-target.dtd\"><target><architecture>aarch64</architecture><xi:include href=\"aarch64-core.xml\"/><xi:include href=\"aarch64-fpu.xml\"/><xi:include href=\"system-registers.xml\"/></target>",
+  "register_packet_bytes": 268,
+  "initial_cpsr": "0x400003c5",
+  "ret": {
+    "pc_before": "0x40000000",
+    "pc_after": "0x40000010",
+    "stop": "T05thread:01;"
+  },
+  "load_store": {
+    "loaded_x4": "0x8877665544332211",
+    "stored_bytes": "1122334455667788"
+  },
+  "comparison_status": "QEMU execution compatibility only; HOL differential matrix and native comparisons pending"
+}

@@ -1,0 +1,11 @@
+{
+  "scope": "E3b implementation/evaluation only",
+  "complete": true,
+  "timestamp": "2026-11-08T16:58:28.754961+00:00",
+  "evidence_sha256": {
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m2/split-verification.json": "f8988c34f2edc0250d7b7abeaa8058c31ab1741faa80883b44b8bfe6241d0b44",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m2/split-proof.json": "d134b25fc4360f08dc7f79f3e5ef3fb981197c9db7b4d7baa0166a30757e685e",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m2/split-measurements.json": "9afc7593c6578fbef941523e205c8c6a9970ae4e6144fe6ae08b59efaa00183a",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m2/split-audit.md": "274d0137f8d7a1b067a4b6ce7f649da1bbb95c0c5ba0f023de274fbc4b08aef7"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "complete": true,
+  "scope": "E7a model steps and data amounts; no elapsed-time bound",
+  "proof": {
+    "nonce": "f1216175dd6e726e38843d6e14b9d54fe4f38d1ad44facc7",
+    "checks": [
+      "cost:trace-additive",
+      "cost:composition",
+      "cost:scalar",
+      "cost:fill",
+      "cost:tail",
+      "cost:bulk",
+      "cost:chunk",
+      "cost:exact8",
+      "cost-mutation:add:old:prefix",
+      "cost-mutation:add:old:execution",
+      "cost-mutation:add:new:prefix",
+      "cost-mutation:add:new:execution",
+      "cost-mutation:add:initial",
+      "cost-mutation:add:numeric",
+      "cost-mutation:delete:old:prefix",
+      "cost-mutation:delete:old:execution",
+      "cost-mutation:delete:new:prefix",
+      "cost-mutation:delete:new:execution",
+      "cost-mutation:delete:initial",
+      "cost-mutation:delete:numeric"
+    ],
+    "inputs": {
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/prover.py": "8c8a137c3ae34713d7c45dc7e71f9babfa747fc67608464c114cb3b3da4b6d1b",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/config.py": "6aff9555d8be8df4a253619cc7ab8645d2c5f61199793b2f0a81f7339f1b7fba",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/checks.ml": "d72a1c5dee0fa3aeee28a066b4960f6fe9be510f38a737aa5d261d035f43c9a8",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/deps.lock": "cf7b5c3fc079a302f4b69b7574df9d99fb4ef6f598390d0883791ac7b6d28578",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/deps.lock": "bb88ae59197f79d703e786eeb95b73109d569248ad4aa5a47316e77ab94a9954",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/opam-switch.export": "58d356ddd19d550db84aa58fdeb32c6394c64e990443011936e9da03afa65713",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/hol-light/ocaml-hol": "9c9528c9e88f6f56223de73f52db42884fe1f61a448fc71b607fbe8848926ec2",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/s2n-bignum/arm/generic/word_max.o": "35a3dd7f70b6d16ee378444624d6875ec38d295a57580aedf48b3c24339aace2",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/resource-proofs.ml": "a8fb96b694eb7a8a2986180dd2ef824209f96ced381745be9af40666ed3c4b88",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/verify_resources.py": "00ea49770f2090e955c8a18718e7beb3e017ca2c37196f09ce9fb2295210c97a",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/resource_mutations.py": "3f250c431a4a0137c27b43fe8b35b4dfa515b9898d211b11ec1642088f516ced",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/memory.ml": "63a485b2afe4b03bafcfe7fb1a107b4bca8005fe35cd3ed19fe48cee0393fcdf",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/costs.ml": "95dc233776177d855e14c52972e621117fbf51324c178c5ecb542780c4bca05e",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/resource_tail.ml": "38e298ae1d6e3f96b8576beccf9502dfe8c7d032fe30130e9fd96802ecf6d490",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/resource_bulk.ml": "7144b66fcdd0057193d3ffa7f8aa1d004cb77f3a58de35b46a743d9f9d9367e1",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/resource_composition.ml": "f79bea4030cf471e0e59a379de88d72235abde8b07676e415f1ab8a611baa946",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/resource_chunk.ml": "ef2273c6b2e53144e006c7886c77b06b7503ea117cce7a2afa7dd298fc2ae849",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/resource_exact8.ml": "54866b7a3768579d95c36d195825b26e872c3e2c767e3128542544bb3f9998b3",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/witnesses.ml": "1c58b0ffadd2845886aff9208c07a54663e239959970dc3f091a07053f25b4a7",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/build/vp_memcpy_scalar.o": "39f09473a272fbe1cbe61fac63731ebe6884f0ebcf3f74dc0022776cfd9aa4b8",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/build/vp_memset.o": "0ae9d579cc905cc6d471a5e65d406f00c2cd3a52cf1a0d96b35eb0d5a41fad38",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/build/vp_memcpy.o": "aee908c896f9b1c4a78a21d79fdbf8b8cb753a0107264600e372b20eed8ac831",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_memcpy_chunk8.o": "5fcf779986ee6d4b71a929006259f22708c14e680c072cc661dac5fabe9aae1e",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_memset.o": "abd8f9055eeed5b1beba1752969b72be0f8647b736ea88e37e7a5f3f5967c65b",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/resource-mutations.ml": "f6c7e4beaef721f3c1fe2f4ca8eb3e179968b26c2b7870ebeba2b725bbba6bf9",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/ve_cost_add.o": "53da11aedd0f9c3f51e2f95134e3583b6bfa0ef8741039446744b98747ba62e1",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/ve_cost_delete.o": "804514e00b4fba93caf2a96fff7d196a0566222932de8df8b90b6b5c48e55745"
+    },
+    "elapsed_seconds": 219.60723266704008,
+    "timings": [
+      {
+        "name": "cost:scalar",
+        "cpu_seconds": 0.65776
+      },
+      {
+        "name": "cost:fill",
+        "cpu_seconds": 0.595947
+      },
+      {
+        "name": "cost:tail",
+        "cpu_seconds": 1.449443
+      },
+      {
+        "name": "cost:bulk",
+        "cpu_seconds": 6.170561
+      },
+      {
+        "name": "cost:chunk",
+        "cpu_seconds": 0.766972
+      },
+      {
+        "name": "cost:exact8",
+        "cpu_seconds": 0.792093
+      }
+    ],
+    "load_cpu_seconds": 200.044874
+  },
+  "mutations": [
+    {
+      "name": "ve_cost_add",
+      "n": 0,
+      "old_steps": 3,
+      "actual_return_steps": 4,
+      "old_endpoint_violates_return": true,
+      "returnaddress": 4096,
+      "object": "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/ve_cost_add.o",
+      "evidence_kind": "HOL finite execution; not a failed tactic"
+    },
+    {
+      "name": "ve_cost_delete",
+      "n": 1,
+      "old_steps": 8,
+      "actual_return_steps": 7,
+      "old_endpoint_violates_return": true,
+      "returnaddress": 4096,
+      "object": "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/ve_cost_delete.o",
+      "evidence_kind": "HOL finite execution; not a failed tactic"
+    }
+  ],
+  "formulas": {
+    "scalar": "5*n+3",
+    "fill": "4*n+3",
+    "exact8": "n!=8: 5*n+5; n=8 and aligned: 8; n=8 and unaligned: 48",
+    "chunk8": "aligned: 7*(n DIV 8)+5*(n MOD 8)+10; unaligned: 5*n+7"
+  },
+  "data_bytes": {
+    "copy": {
+      "read": "n",
+      "write": "n"
+    },
+    "fill": {
+      "read": 0,
+      "write": "n"
+    }
+  },
+  "private_stack_bytes": 0,
+  "heap_bytes": 0,
+  "stack_basis": "leaf bodies contain no SP-relative load/store or SP update; counted theorem frame excludes SP",
+  "instruction_count_semantics": "exact number of ARM relation steps through RET; not a first-PC-hit time",
+  "external_assumptions": [
+    "ordinary RAM remains valid",
+    "pinned ARM ISA model",
+    "kernel/runtime/hardware correspondence"
+  ],
+  "source_inputs": {
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/verify_resources.py": "00ea49770f2090e955c8a18718e7beb3e017ca2c37196f09ce9fb2295210c97a",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/resource_mutations.py": "3f250c431a4a0137c27b43fe8b35b4dfa515b9898d211b11ec1642088f516ced",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/memory.ml": "63a485b2afe4b03bafcfe7fb1a107b4bca8005fe35cd3ed19fe48cee0393fcdf",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/costs.ml": "95dc233776177d855e14c52972e621117fbf51324c178c5ecb542780c4bca05e",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/resource_tail.ml": "38e298ae1d6e3f96b8576beccf9502dfe8c7d032fe30130e9fd96802ecf6d490",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/resource_bulk.ml": "7144b66fcdd0057193d3ffa7f8aa1d004cb77f3a58de35b46a743d9f9d9367e1",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/resource_composition.ml": "f79bea4030cf471e0e59a379de88d72235abde8b07676e415f1ab8a611baa946",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/resource_chunk.ml": "ef2273c6b2e53144e006c7886c77b06b7503ea117cce7a2afa7dd298fc2ae849",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/resource_exact8.ml": "54866b7a3768579d95c36d195825b26e872c3e2c767e3128542544bb3f9998b3",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/witnesses.ml": "1c58b0ffadd2845886aff9208c07a54663e239959970dc3f091a07053f25b4a7"
+  }
+}

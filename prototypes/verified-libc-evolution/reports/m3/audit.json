@@ -1,0 +1,22 @@
+{
+  "complete": true,
+  "scope": "M3 only",
+  "timestamp": "2026-11-08T20:31:58.128376+00:00",
+  "verification_nonce": "c4158438bc5657f838cbc6ca4df2ee505702a6fd249c1ba4",
+  "independent_recheck_success": false,
+  "investigation_complete": true,
+  "selected": "ve_opt_u2_mov",
+  "evidence_sha256": {
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/verification.json": "e5531e38320a7542892bf5d92fcc739eff15095fad5ab543889be3c1d901c6fa",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/isa/verification.json": "8e47a8ed56763f4565269a055d2bccda347178aa1684e84fc5d230c3a29da0f0",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/isa/README.md": "e9809abae5a3c2f77d47bd2761151a7e422c0d5b6765a2b227f56766365a2b41",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/resources/verification.json": "95b55f0fb0a39810c0bfe49656bc2901d00465251de6e3d7925bd8cb28048f95",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/resources/README.md": "e8487ef559cc35e3fdbb5262aff6b1566a457cbbf1ad0a6e15ec19169e03e184",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/independent-recheck/trial.json": "1d528c58bf9c4f7904101dc156a1ab933ba038f41f7153dfc1db500be039a9fa",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/independent-recheck/README.md": "94be53a3a94aabf4ded6d4001ee394106ffbcb76db6ddd23185bf8c676e4fe4d",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/search/audit.json": "1706bb3499b79fb486eb77a7f8ad6238139a22b14760bd951f7a52e61ec2c7cf",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/search/selection.json": "2fb5745188a6098d10b5dc09f91dfc5fa3e91a3b39936838fa1a7f81cbfd2513",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/search/confirmation.json": "63c42005aa2e62828522b58b4bc3ac24d9d12b698411d96352582d9d387ecaf9",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m3/audit.md": "5a6679f5acb4bab4e472fd444bcb08533eb0fb95853a65b2a1752b22de165db3"
+  }
+}

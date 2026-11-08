@@ -1,0 +1,476 @@
+{
+  "scope": "E4 verification, performance audit pending",
+  "verification_passed": true,
+  "phase_complete": true,
+  "proof": {
+    "nonce": "af0ee96b05cf6ffac4b2d657fc7e3be5fce4aa9da8042567",
+    "checks": [
+      "vp2_block_copy8_0",
+      "vp2_block_copy8_8",
+      "vp2_block_copy8_16",
+      "vp2_block_copy8_24",
+      "vp2_block_copy8_x3",
+      "vp2_block_copy8_indexed",
+      "vp2_block_copybyte_indexed",
+      "memmove:forward-unread-range",
+      "memmove:backward-unread-range",
+      "memmove:forward",
+      "memmove:backward",
+      "memmove:public",
+      "memmove:zero-no-data",
+      "memmove:same-no-data",
+      "memmove:forward-access",
+      "memmove:backward-access",
+      "memmove:access-strong",
+      "memmove:access",
+      "move-mut:always-forward:initial",
+      "move-mut:always-forward:numeric",
+      "move-mut:always-forward:execution",
+      "move-mut:always-backward:initial",
+      "move-mut:always-backward:numeric",
+      "move-mut:always-backward:execution",
+      "move-mut:reverse-direction:initial",
+      "move-mut:reverse-direction:numeric",
+      "move-mut:reverse-direction:execution",
+      "move-mut:missing-first:initial",
+      "move-mut:missing-first:numeric",
+      "move-mut:missing-first:execution",
+      "move-mut:missing-last:initial",
+      "move-mut:missing-last:numeric",
+      "move-mut:missing-last:execution",
+      "move-mut:zero-decrement:initial",
+      "move-mut:zero-decrement:numeric",
+      "move-mut:zero-decrement:execution",
+      "move-mut:overread:initial",
+      "move-mut:overread:numeric",
+      "move-mut:overread:execution",
+      "move-mut:overwrite:initial",
+      "move-mut:overwrite:numeric",
+      "move-mut:overwrite:execution"
+    ],
+    "inputs": {
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/prover.py": "8c8a137c3ae34713d7c45dc7e71f9babfa747fc67608464c114cb3b3da4b6d1b",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/config.py": "6aff9555d8be8df4a253619cc7ab8645d2c5f61199793b2f0a81f7339f1b7fba",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/checks.ml": "d72a1c5dee0fa3aeee28a066b4960f6fe9be510f38a737aa5d261d035f43c9a8",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/deps.lock": "cf7b5c3fc079a302f4b69b7574df9d99fb4ef6f598390d0883791ac7b6d28578",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/deps.lock": "bb88ae59197f79d703e786eeb95b73109d569248ad4aa5a47316e77ab94a9954",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/opam-switch.export": "58d356ddd19d550db84aa58fdeb32c6394c64e990443011936e9da03afa65713",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/hol-light/ocaml-hol": "9c9528c9e88f6f56223de73f52db42884fe1f61a448fc71b607fbe8848926ec2",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/s2n-bignum/arm/generic/word_max.o": "35a3dd7f70b6d16ee378444624d6875ec38d295a57580aedf48b3c24339aace2",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/blocks.ml": "223cab06a848d2c844b127f60b9eb0e6d61cd25e1938dff1be561274b4cff5f3",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/memmove_specs.ml": "309595dec6f145d00738b871be1048b81dac0b103a6ed3f1aaba6733ba1f00c9",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/memmove_bounds.ml": "2d6896d408ed3d0eded33f7e1dd4c9f64f5b15eee0696efc3b2d955a32f170e8",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/memmove_forward.ml": "190b2c8ee813a757687a91a0f13feb150d172675b0f7da5961781f1f21893893",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/memmove_backward.ml": "213bf9a7a8be5148a7d9b89a88433d699d0cc5a94c404456c4128157ae0cb020",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/memmove.ml": "300e489b3d8f387f7849688780f4fd3674c7f3882d381cacaef61b511a2f33ef",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/memmove_zero.ml": "43d0988bf8a27f90c3c2b4f3757be99502b57e7fb8cd1fc1cb38240802e5e3a4",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/memmove_access_loops.ml": "cce5f48e3509d30a1ef1414d61d6f255c0f271d2b4541d0c8c230daf048943b7",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/memmove_access.ml": "558785b424c75cec9401adcdf1fb2e600826dfcae3e8ec38980bd34ccfcbd322",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/move-mutations.ml": "e4ca47fd44932726550d661eb73e8cfb865abfa30fa3d9111b9cb3e211ef6015",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/blocks.ml": "752fcaee81baeaf0107896451eccbde337f59664d2dc45ab0637334afe93e417",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/witnesses.ml": "1c58b0ffadd2845886aff9208c07a54663e239959970dc3f091a07053f25b4a7",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/memmove_witnesses.ml": "fa4a92583572d510bebc7aa4ef4fd2bbb7f1680ef464db8328b0283171fb2403",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/verify_memmove.py": "701915b05d4c7749913afb7d7c3ba781d7b3b42bf0c050c6223ff08c227a21d3",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/blocks.py": "ba616f79a0d73a12e1a711d3154c658b2786f38cad8f908fdcf3241a60a1eb3a",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/build_m2.py": "fa1b217e09a519ef0d40b870a605e184de4186e3fffcea5b6f6507478df71a04",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/move_mutations.py": "c2af39b2154a42f1ee38e2e9120be2c9895cd2c3797abe3954abcfd22cf51770",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/native_m2.py": "2f6bc3c4eb1c9cce4536c2b172984575156ad2205e04230701b0f0e8aed5d7b2",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/native_move_mutations.py": "aab97d15118b4f04ee71b5d18bd5ee1670774a51ef7111050b386bf3a92189e8",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/m2_artifacts.py": "dc7f05dea0225f2495b7a3c88d1489e735d83c38542f9693467d8bb452854da0",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/generator/main.ml": "d86ee0129daae73a2fc145972b5bdbab7a92d255e2dc03f7560cbe614c7577f6",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/generator/m2.ml": "e15376272d772dc0fb294d7188f9989b8e5f43685b3e25c3f3c0da793bd54a89",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_memmove.o": "4493e5ef86ec691c4ed165ea5203cfba504e66b2baf4dfbf83aa1f33b4c03205",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_0.o": "210c29119b644c830cfc85d971c4f57d30b367a02902eaeb2b740b5fb9a98eab",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_8.o": "e3d3a697143386d27dd213344f42c4e1de1ec57a2d57c3a949503d5c207080cb",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_16.o": "1778ae5f4b1080c1201c1c6e3c12f0744fdab8b0f9403223931166b9b8bbb513",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_24.o": "1dbf5bf99f67021559dd2e3a585d18762042d78fde6c81cf181a77098e362c0e",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_x3.o": "7b7aaa876e947936030419fc3256bc75f3d18d2d94f0ed529b9d0c18edac8571",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_indexed.o": "2a4bd96744db73f74ca119004a16ce230be0ec052f588fc75111faab5dd11221",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copybyte_indexed.o": "fe332aa353a6a8dad80b58ee9a70d53601305270ce11d2160a3f63f0c86428a9",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/move_mut_always_forward.o": "b0f443610e44dd24d9ce9f92cb8940592ba8393a5449889c7478085bd6188b7f",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/move_mut_always_backward.o": "33bb53289a8e6d3c0dd1755814dd211a45d5fac2ff2f5950494a6bfab1798975",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/move_mut_reverse_direction.o": "6d0c8a1c69d6c9c6ffe1d256e99ed0425348fba11702a23e218c33b84418ff8e",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/move_mut_missing_first.o": "d4bf1885e6f523e4e88c0b3a475c9360b445578413fb227dce8dd392de592bdb",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/move_mut_missing_last.o": "30c19fb57c73feaef582b34fd9512c9b0c59c109a4af15b50f99f06ac32af61d",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/move_mut_zero_decrement.o": "a87fd2fcd93911ad309c9cfbab45ca4bb82822a71b4ebbc4b46351a804c7a193",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/move_mut_overread.o": "af24f65a9e8978452a92c46599d0bd7d0423b3858e9eb7f6ef309366e08740e0",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/move_mut_overwrite.o": "450e3237f965fe900bc8327af717cf30306cab29b115b7c36c96ccade1a5e1c5"
+    },
+    "elapsed_seconds": 245.82671562535688,
+    "timings": [
+      {
+        "name": "VP2_BLOCK_COPY8_0_CORRECT",
+        "cpu_seconds": 0.056081
+      },
+      {
+        "name": "VP2_BLOCK_COPY8_8_CORRECT",
+        "cpu_seconds": 0.055576
+      },
+      {
+        "name": "VP2_BLOCK_COPY8_16_CORRECT",
+        "cpu_seconds": 0.056055
+      },
+      {
+        "name": "VP2_BLOCK_COPY8_24_CORRECT",
+        "cpu_seconds": 0.055391
+      },
+      {
+        "name": "VP2_BLOCK_COPY8_X3_CORRECT",
+        "cpu_seconds": 0.052934
+      },
+      {
+        "name": "VP2_BLOCK_COPY8_INDEXED_CORRECT",
+        "cpu_seconds": 0.060643
+      },
+      {
+        "name": "VP2_BLOCK_COPYBYTE_INDEXED_CORRECT",
+        "cpu_seconds": 0.066185
+      },
+      {
+        "name": "module:blocks.ml",
+        "cpu_seconds": 1.527428
+      },
+      {
+        "name": "module:memmove_specs.ml",
+        "cpu_seconds": 0.617537
+      },
+      {
+        "name": "module:memmove_bounds.ml",
+        "cpu_seconds": 0.109233
+      },
+      {
+        "name": "module:memmove_forward.ml",
+        "cpu_seconds": 0.799801
+      },
+      {
+        "name": "module:memmove_backward.ml",
+        "cpu_seconds": 0.621135
+      },
+      {
+        "name": "module:memmove.ml",
+        "cpu_seconds": 0.738348
+      },
+      {
+        "name": "module:memmove_zero.ml",
+        "cpu_seconds": 0.160119
+      },
+      {
+        "name": "module:memmove_access_loops.ml",
+        "cpu_seconds": 0.973107
+      },
+      {
+        "name": "module:memmove_access.ml",
+        "cpu_seconds": 0.780638
+      },
+      {
+        "name": "module:move-mutations.ml",
+        "cpu_seconds": 36.051733
+      }
+    ],
+    "load_cpu_seconds": 202.180509
+  },
+  "native": {
+    "status": "finite native observations; formal overlap/termination/access proofs still required",
+    "checks": 35709,
+    "output": "native memmove: 35709 checks passed (snapshot/libc/overlap/guards/ABI, seed 0x19273645)",
+    "body_bytes": 68,
+    "executable_sha256": "5c63fb6ea1033cfeb6400679fccb8dddec0fc551a073e444f2dc77bc9e298537",
+    "inputs": {
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/generator/main.ml": "d86ee0129daae73a2fc145972b5bdbab7a92d255e2dc03f7560cbe614c7577f6",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/generator/m2.ml": "e15376272d772dc0fb294d7188f9989b8e5f43685b3e25c3f3c0da793bd54a89",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/include/vp2_memory.h": "f2d842c02a2cff49f36d55f507747f2e93d4b4512981c123dbad8dc2d47c23cf",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/include/vp2_evolution.h": "358584ccb1aece7f97f7e859502514f5a7ceb0fbdd557f9435ec3cd25a4c9322",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tests/memmove.c": "8800c947094c37c17a5bae8f5a5aa5d44722731fa80da0aeaee528b1f0979e3a",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tests/abi.S": "3c99fea9c8795f7b0dc4920fc46bbea4871547b6bc4f4e391e64a7a4cacc5baf",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/native_m2.py": "2f6bc3c4eb1c9cce4536c2b172984575156ad2205e04230701b0f0e8aed5d7b2",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/build_m2.py": "fa1b217e09a519ef0d40b870a605e184de4186e3fffcea5b6f6507478df71a04",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_memmove.o": "4493e5ef86ec691c4ed165ea5203cfba504e66b2baf4dfbf83aa1f33b4c03205",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/test_memmove": "5c63fb6ea1033cfeb6400679fccb8dddec0fc551a073e444f2dc77bc9e298537"
+    }
+  },
+  "native_mutations": {
+    "results": [
+      {
+        "name": "always-forward",
+        "kind": "functional",
+        "normal_control_returncode": 4,
+        "mutation_returncode": 0,
+        "object_sha256": "b0f443610e44dd24d9ce9f92cb8940592ba8393a5449889c7478085bd6188b7f",
+        "executable_sha256": "cba19d73883f9cbd1f5fe8d132028deaf54e4803ca1bd3949e1c95485d76ef20"
+      },
+      {
+        "name": "always-backward",
+        "kind": "functional",
+        "normal_control_returncode": 4,
+        "mutation_returncode": 0,
+        "object_sha256": "33bb53289a8e6d3c0dd1755814dd211a45d5fac2ff2f5950494a6bfab1798975",
+        "executable_sha256": "4bfdda1355b677e16ab6d5ba83c6239412000c6c4a32b73ffd6ef0b870a88089"
+      },
+      {
+        "name": "reverse-direction",
+        "kind": "functional",
+        "normal_control_returncode": 4,
+        "mutation_returncode": 0,
+        "object_sha256": "6d0c8a1c69d6c9c6ffe1d256e99ed0425348fba11702a23e218c33b84418ff8e",
+        "executable_sha256": "7100f364153146fa99230a7223571b4a190b1d84161bf26f1f49f5611827df95"
+      },
+      {
+        "name": "missing-first",
+        "kind": "functional",
+        "normal_control_returncode": 4,
+        "mutation_returncode": 0,
+        "object_sha256": "d4bf1885e6f523e4e88c0b3a475c9360b445578413fb227dce8dd392de592bdb",
+        "executable_sha256": "9d11451b653cafcf4b336b0fdf17b71398214c7c401065c44e15d1204585ede5"
+      },
+      {
+        "name": "missing-last",
+        "kind": "functional",
+        "normal_control_returncode": 4,
+        "mutation_returncode": 0,
+        "object_sha256": "30c19fb57c73feaef582b34fd9512c9b0c59c109a4af15b50f99f06ac32af61d",
+        "executable_sha256": "3b1d9dc7fa83511ad107026b75c8fb08be01ba4da8fc05eab4d7dafa3b191605"
+      },
+      {
+        "name": "zero-decrement",
+        "kind": "access",
+        "normal_control_returncode": 4,
+        "mutation_returncode": -10,
+        "object_sha256": "a87fd2fcd93911ad309c9cfbab45ca4bb82822a71b4ebbc4b46351a804c7a193",
+        "executable_sha256": "3fcec3f57ee4ac76332d95438fc2950d3dda13e8fc71540f3b6d5247a304300a"
+      },
+      {
+        "name": "overread",
+        "kind": "access",
+        "normal_control_returncode": 4,
+        "mutation_returncode": -10,
+        "object_sha256": "af24f65a9e8978452a92c46599d0bd7d0423b3858e9eb7f6ef309366e08740e0",
+        "executable_sha256": "d1e0b66c429722d52ea2d933cb615e1338c64b125bc59683a7dad9d373667b8e"
+      },
+      {
+        "name": "overwrite",
+        "kind": "access",
+        "normal_control_returncode": 4,
+        "mutation_returncode": -10,
+        "object_sha256": "450e3237f965fe900bc8327af717cf30306cab29b115b7c36c96ccade1a5e1c5",
+        "executable_sha256": "2d64348da31ab3c496b3a979290ce87fb0aa552c0558ca10fd9a1199c5c1b1f5"
+      }
+    ],
+    "inputs": {
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/native_move_mutations.py": "aab97d15118b4f04ee71b5d18bd5ee1670774a51ef7111050b386bf3a92189e8",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/move_mutations.py": "c2af39b2154a42f1ee38e2e9120be2c9895cd2c3797abe3954abcfd22cf51770",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tests/move_negative.c": "ffd046a6cbc8479ae546aab2d36d82c12d4d067f1923098dd8d7a2c63ac8913d",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_memmove.o": "4493e5ef86ec691c4ed165ea5203cfba504e66b2baf4dfbf83aa1f33b4c03205",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/move_mut_always_forward.o": "b0f443610e44dd24d9ce9f92cb8940592ba8393a5449889c7478085bd6188b7f",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/move_mut_always_backward.o": "33bb53289a8e6d3c0dd1755814dd211a45d5fac2ff2f5950494a6bfab1798975",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/move_mut_reverse_direction.o": "6d0c8a1c69d6c9c6ffe1d256e99ed0425348fba11702a23e218c33b84418ff8e",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/move_mut_missing_first.o": "d4bf1885e6f523e4e88c0b3a475c9360b445578413fb227dce8dd392de592bdb",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/move_mut_missing_last.o": "30c19fb57c73feaef582b34fd9512c9b0c59c109a4af15b50f99f06ac32af61d",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/move_mut_zero_decrement.o": "a87fd2fcd93911ad309c9cfbab45ca4bb82822a71b4ebbc4b46351a804c7a193",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/move_mut_overread.o": "af24f65a9e8978452a92c46599d0bd7d0423b3858e9eb7f6ef309366e08740e0",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/move_mut_overwrite.o": "450e3237f965fe900bc8327af717cf30306cab29b115b7c36c96ccade1a5e1c5"
+    },
+    "scope": "native observations, not a negation of a HOL Hoare theorem"
+  },
+  "artifacts": [
+    {
+      "path": "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_memmove.o",
+      "sha256": "4493e5ef86ec691c4ed165ea5203cfba504e66b2baf4dfbf83aa1f33b4c03205",
+      "function": "vp2_memmove",
+      "start": 0,
+      "body_bytes": 68
+    },
+    {
+      "path": "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/test_memmove",
+      "sha256": "5c63fb6ea1033cfeb6400679fccb8dddec0fc551a073e444f2dc77bc9e298537",
+      "function": "vp2_memmove",
+      "start": 4294971548,
+      "body_bytes": 68
+    }
+  ],
+  "body_bytes": 68,
+  "private_stack_bytes": 0,
+  "private_heap_bytes": 0,
+  "ghost_runtime_bytes": 0,
+  "candidates": [
+    {
+      "candidate": "vp2_memmove",
+      "admissible": true,
+      "contracts": [
+        {
+          "candidate": "vp2_memmove",
+          "contract": "ve_move_contract",
+          "status": "proved",
+          "evidence_kind": "hol_closed_theorem",
+          "reason": "memmove:public",
+          "evidence": [
+            "reports/m2/memmove-proof.json",
+            "memmove:public"
+          ],
+          "code_sha256": "4493e5ef86ec691c4ed165ea5203cfba504e66b2baf4dfbf83aa1f33b4c03205"
+        },
+        {
+          "candidate": "vp2_memmove",
+          "contract": "ve_move_access_contract",
+          "status": "proved",
+          "evidence_kind": "hol_closed_theorem",
+          "reason": "memmove:access",
+          "evidence": [
+            "reports/m2/memmove-proof.json",
+            "memmove:access"
+          ],
+          "code_sha256": "4493e5ef86ec691c4ed165ea5203cfba504e66b2baf4dfbf83aa1f33b4c03205"
+        }
+      ]
+    },
+    {
+      "candidate": "move-mut:always-forward",
+      "admissible": false,
+      "contracts": [
+        {
+          "candidate": "move-mut:always-forward",
+          "contract": "memmove.functional",
+          "status": "counterexample",
+          "evidence_kind": "hol_execution",
+          "reason": "valid initial state with a finite first-return data violation or out-of-bounds access; not a failed tactic or a general Hoare negation",
+          "evidence": [
+            "reports/m2/memmove-proof.json",
+            "move-mut:always-forward:execution"
+          ],
+          "code_sha256": "b0f443610e44dd24d9ce9f92cb8940592ba8393a5449889c7478085bd6188b7f"
+        }
+      ]
+    },
+    {
+      "candidate": "move-mut:always-backward",
+      "admissible": false,
+      "contracts": [
+        {
+          "candidate": "move-mut:always-backward",
+          "contract": "memmove.functional",
+          "status": "counterexample",
+          "evidence_kind": "hol_execution",
+          "reason": "valid initial state with a finite first-return data violation or out-of-bounds access; not a failed tactic or a general Hoare negation",
+          "evidence": [
+            "reports/m2/memmove-proof.json",
+            "move-mut:always-backward:execution"
+          ],
+          "code_sha256": "33bb53289a8e6d3c0dd1755814dd211a45d5fac2ff2f5950494a6bfab1798975"
+        }
+      ]
+    },
+    {
+      "candidate": "move-mut:reverse-direction",
+      "admissible": false,
+      "contracts": [
+        {
+          "candidate": "move-mut:reverse-direction",
+          "contract": "memmove.functional",
+          "status": "counterexample",
+          "evidence_kind": "hol_execution",
+          "reason": "valid initial state with a finite first-return data violation or out-of-bounds access; not a failed tactic or a general Hoare negation",
+          "evidence": [
+            "reports/m2/memmove-proof.json",
+            "move-mut:reverse-direction:execution"
+          ],
+          "code_sha256": "6d0c8a1c69d6c9c6ffe1d256e99ed0425348fba11702a23e218c33b84418ff8e"
+        }
+      ]
+    },
+    {
+      "candidate": "move-mut:missing-first",
+      "admissible": false,
+      "contracts": [
+        {
+          "candidate": "move-mut:missing-first",
+          "contract": "memmove.functional",
+          "status": "counterexample",
+          "evidence_kind": "hol_execution",
+          "reason": "valid initial state with a finite first-return data violation or out-of-bounds access; not a failed tactic or a general Hoare negation",
+          "evidence": [
+            "reports/m2/memmove-proof.json",
+            "move-mut:missing-first:execution"
+          ],
+          "code_sha256": "d4bf1885e6f523e4e88c0b3a475c9360b445578413fb227dce8dd392de592bdb"
+        }
+      ]
+    },
+    {
+      "candidate": "move-mut:missing-last",
+      "admissible": false,
+      "contracts": [
+        {
+          "candidate": "move-mut:missing-last",
+          "contract": "memmove.functional",
+          "status": "counterexample",
+          "evidence_kind": "hol_execution",
+          "reason": "valid initial state with a finite first-return data violation or out-of-bounds access; not a failed tactic or a general Hoare negation",
+          "evidence": [
+            "reports/m2/memmove-proof.json",
+            "move-mut:missing-last:execution"
+          ],
+          "code_sha256": "30c19fb57c73feaef582b34fd9512c9b0c59c109a4af15b50f99f06ac32af61d"
+        }
+      ]
+    },
+    {
+      "candidate": "move-mut:zero-decrement",
+      "admissible": false,
+      "contracts": [
+        {
+          "candidate": "move-mut:zero-decrement",
+          "contract": "memmove.access",
+          "status": "counterexample",
+          "evidence_kind": "hol_execution",
+          "reason": "valid initial state with a finite first-return data violation or out-of-bounds access; not a failed tactic or a general Hoare negation",
+          "evidence": [
+            "reports/m2/memmove-proof.json",
+            "move-mut:zero-decrement:execution"
+          ],
+          "code_sha256": "a87fd2fcd93911ad309c9cfbab45ca4bb82822a71b4ebbc4b46351a804c7a193"
+        }
+      ]
+    },
+    {
+      "candidate": "move-mut:overread",
+      "admissible": false,
+      "contracts": [
+        {
+          "candidate": "move-mut:overread",
+          "contract": "memmove.access",
+          "status": "counterexample",
+          "evidence_kind": "hol_execution",
+          "reason": "valid initial state with a finite first-return data violation or out-of-bounds access; not a failed tactic or a general Hoare negation",
+          "evidence": [
+            "reports/m2/memmove-proof.json",
+            "move-mut:overread:execution"
+          ],
+          "code_sha256": "af24f65a9e8978452a92c46599d0bd7d0423b3858e9eb7f6ef309366e08740e0"
+        }
+      ]
+    },
+    {
+      "candidate": "move-mut:overwrite",
+      "admissible": false,
+      "contracts": [
+        {
+          "candidate": "move-mut:overwrite",
+          "contract": "memmove.access",
+          "status": "counterexample",
+          "evidence_kind": "hol_execution",
+          "reason": "valid initial state with a finite first-return data violation or out-of-bounds access; not a failed tactic or a general Hoare negation",
+          "evidence": [
+            "reports/m2/memmove-proof.json",
+            "move-mut:overwrite:execution"
+          ],
+          "code_sha256": "450e3237f965fe900bc8327af717cf30306cab29b115b7c36c96ccade1a5e1c5"
+        }
+      ]
+    }
+  ],
+  "remaining": [],
+  "limits": [
+    "ordinary sequential RAM and external validity/lifetime/exclusive update contract",
+    "same initial source snapshot, not whole-source preservation during overlap",
+    "finite model/native negative observations are distinguished from a general Hoare-contract negation"
+  ]
+}

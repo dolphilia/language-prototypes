@@ -1,0 +1,11 @@
+{
+  "scope": "E5 only",
+  "complete": true,
+  "timestamp": "2026-11-08T19:34:24.619867+00:00",
+  "evidence_sha256": {
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m2/calls-verification.json": "26ec1da95313c116bbf0196da7fc87eba99d9448b5916e5e4767b0f25adf7d8f",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m2/calls-proof.json": "ba92e8dffe556a42b614df37ca8db4c50c0629a65e5d71298bc12b73daa2fc94",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m2/calls-measurements.json": "002f654c082afba4f4f69db2d2f5b42482d11ec5159c36927a387ec804ac591f",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/reports/m2/calls-audit.md": "dacbf3163fe28d334884a131d06208fb3a62073081a9ae591bf81f1741533318"
+  }
+}

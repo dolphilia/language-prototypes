@@ -1,0 +1,42 @@
+{
+  "scope": "E5: one static direct call, two exact linked layouts, macOS ordinary arm64",
+  "claims": [
+    {
+      "claim": "functional result, finite return, restoration and frame",
+      "target": "ve_call_contract for layouts a and b; caller 24 bytes, embedded M1 copy 76 bytes",
+      "logical_conditions": "existing copy conditions; aligned SP, 16 <= val SP; whole code bundle separated from destination and private stack; private 16-byte stack separated from source and destination",
+      "providers": "caller supplies initial registers, copy geometry and a valid private stack; the BL instruction supplies the child return address; the parent proof derives the child's code/destination separation; M1 child theorem supplies copy behavior; actual STR/LDR and SUB/ADD prove preservation and restoration",
+      "external_trust": "physical validity/lifetime/exclusivity of ordinary RAM and the private stack; ISA/CPU correspondence; HOL kernel and its execution environment; exact bytes mapped by the OS loader with the quantified common slide",
+      "evidence": ["proofs/call_specs.ml", "proofs/calls.ml", "tools/calls_proof.py", "reports/m2/calls-proof.json"],
+      "change": "the child return address and its preservation are derived from code instead of supplied independently; a private stack contract is newly required"
+    },
+    {
+      "claim": "all intermediate data accesses remain inside source/destination and private stack",
+      "target": "ve_call_access_contract; stack slot reads/writes are 8 bytes inside a 16-byte frame",
+      "logical_conditions": "same geometry as functional contract; an arbitrary initial event suffix",
+      "providers": "parent ARM steps for the stack and BL/RET; M1 strong access theorem for the copy; proved widening of readable/writable ranges",
+      "external_trust": "model events describe architectural data accesses, not every cache/speculative/power observation",
+      "evidence": ["proofs/calls.ml", "reports/m2/calls-proof.json"],
+      "change": "the copy remains a stack-free leaf; the caller alone adds stack accesses and call/return events"
+    },
+    {
+      "claim": "the proof targets the actual post-link code and direct callee",
+      "target": "one external ARM64_RELOC_BRANCH26, zero addend; positive displacements 16 and -340 bytes",
+      "logical_conditions": "exact immutable bundle words; a common arbitrary runtime load base; aligned loaded code",
+      "providers": "restricted object relocation validation; actual linked BL decoding and target equality; exact complete callee bytes; Mach-O and LLVM symbol-position comparison; raw executable-span ingestion followed by expected-word assertion and kernel-checked code execution",
+      "external_trust": "Mach-O/LLVM readers and linked-span ingestion are unverified; linker and OS loader are not verified; file offsets and actual mapped bytes must correspond",
+      "evidence": ["tools/call_artifacts.py", "proofs/linked_span.ml", "tools/call_rejections.py", "tools/call_ingest_checks.py", "reports/m2/calls-verification.json"],
+      "change": "untrusted linker output is checked per result; no general relocation or linker-correctness theorem is claimed"
+    },
+    {
+      "claim": "bad stack, saved register and return target have concrete violations",
+      "target": "three separately linked caller mutations, unchanged M1 callee",
+      "logical_conditions": "explicit loaded initial states satisfy normal caller geometry; extra numerical facts are proved closed",
+      "providers": "initial-state witnesses plus finite ARM executions; isolated native runs with an unmodified normal control",
+      "external_trust": "native observations rely on host CPU/OS/test harness; a finite violation is not identified with a general Hoare-theorem negation",
+      "evidence": ["proofs/call_witnesses.ml", "tools/call_witnesses.py", "tools/call_mutations.py", "reports/m2/calls-verification.json"],
+      "change": "artifact refusals, model counterexamples and native observations remain distinct forms of evidence"
+    }
+  ],
+  "not_claimed": ["general verified linker", "dynamic or indirect callee resolution", "allocator or OS verification", "unconditional memory safety", "universal performance superiority"]
+}

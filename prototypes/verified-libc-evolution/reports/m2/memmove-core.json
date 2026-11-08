@@ -1,0 +1,140 @@
+{
+  "scope": "E4 partial core",
+  "complete": false,
+  "proof": {
+    "nonce": "396cfc2ba635e02b57da1ff819be8c7fafc375e792de0c45",
+    "checks": [
+      "vp2_block_copy8_0",
+      "vp2_block_copy8_8",
+      "vp2_block_copy8_16",
+      "vp2_block_copy8_24",
+      "vp2_block_copy8_x3",
+      "vp2_block_copy8_indexed",
+      "vp2_block_copybyte_indexed",
+      "memmove:forward-unread-range",
+      "memmove:backward-unread-range",
+      "memmove:forward",
+      "memmove:backward",
+      "memmove:public",
+      "memmove:zero-no-data",
+      "memmove:same-no-data"
+    ],
+    "inputs": {
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/prover.py": "8c8a137c3ae34713d7c45dc7e71f9babfa747fc67608464c114cb3b3da4b6d1b",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/config.py": "6aff9555d8be8df4a253619cc7ab8645d2c5f61199793b2f0a81f7339f1b7fba",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/checks.ml": "d72a1c5dee0fa3aeee28a066b4960f6fe9be510f38a737aa5d261d035f43c9a8",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/deps.lock": "cf7b5c3fc079a302f4b69b7574df9d99fb4ef6f598390d0883791ac7b6d28578",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/deps.lock": "bb88ae59197f79d703e786eeb95b73109d569248ad4aa5a47316e77ab94a9954",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/opam-switch.export": "58d356ddd19d550db84aa58fdeb32c6394c64e990443011936e9da03afa65713",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/hol-light/ocaml-hol": "9c9528c9e88f6f56223de73f52db42884fe1f61a448fc71b607fbe8848926ec2",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-minimal/.deps/s2n-bignum/arm/generic/word_max.o": "35a3dd7f70b6d16ee378444624d6875ec38d295a57580aedf48b3c24339aace2",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/blocks.ml": "223cab06a848d2c844b127f60b9eb0e6d61cd25e1938dff1be561274b4cff5f3",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/memmove_specs.ml": "309595dec6f145d00738b871be1048b81dac0b103a6ed3f1aaba6733ba1f00c9",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/memmove_bounds.ml": "2d6896d408ed3d0eded33f7e1dd4c9f64f5b15eee0696efc3b2d955a32f170e8",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/memmove_forward.ml": "190b2c8ee813a757687a91a0f13feb150d172675b0f7da5961781f1f21893893",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/memmove_backward.ml": "213bf9a7a8be5148a7d9b89a88433d699d0cc5a94c404456c4128157ae0cb020",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/memmove.ml": "300e489b3d8f387f7849688780f4fd3674c7f3882d381cacaef61b511a2f33ef",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/memmove_zero.ml": "43d0988bf8a27f90c3c2b4f3757be99502b57e7fb8cd1fc1cb38240802e5e3a4",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/proofs/blocks.ml": "752fcaee81baeaf0107896451eccbde337f59664d2dc45ab0637334afe93e417",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/verify_memmove_core.py": "b3d323d09f0680aa4514bb9b9db6be5e59e3f70d89e11070fe29e8e252a5996f",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/blocks.py": "ba616f79a0d73a12e1a711d3154c658b2786f38cad8f908fdcf3241a60a1eb3a",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/build_m2.py": "fa1b217e09a519ef0d40b870a605e184de4186e3fffcea5b6f6507478df71a04",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/generator/main.ml": "d86ee0129daae73a2fc145972b5bdbab7a92d255e2dc03f7560cbe614c7577f6",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/generator/m2.ml": "e15376272d772dc0fb294d7188f9989b8e5f43685b3e25c3f3c0da793bd54a89",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_memmove.o": "4493e5ef86ec691c4ed165ea5203cfba504e66b2baf4dfbf83aa1f33b4c03205",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_0.o": "210c29119b644c830cfc85d971c4f57d30b367a02902eaeb2b740b5fb9a98eab",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_8.o": "e3d3a697143386d27dd213344f42c4e1de1ec57a2d57c3a949503d5c207080cb",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_16.o": "1778ae5f4b1080c1201c1c6e3c12f0744fdab8b0f9403223931166b9b8bbb513",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_24.o": "1dbf5bf99f67021559dd2e3a585d18762042d78fde6c81cf181a77098e362c0e",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_x3.o": "7b7aaa876e947936030419fc3256bc75f3d18d2d94f0ed529b9d0c18edac8571",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copy8_indexed.o": "2a4bd96744db73f74ca119004a16ce230be0ec052f588fc75111faab5dd11221",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_block_copybyte_indexed.o": "fe332aa353a6a8dad80b58ee9a70d53601305270ce11d2160a3f63f0c86428a9"
+    },
+    "elapsed_seconds": 204.84126666700467,
+    "timings": [
+      {
+        "name": "VP2_BLOCK_COPY8_0_CORRECT",
+        "cpu_seconds": 0.053846
+      },
+      {
+        "name": "VP2_BLOCK_COPY8_8_CORRECT",
+        "cpu_seconds": 0.053009
+      },
+      {
+        "name": "VP2_BLOCK_COPY8_16_CORRECT",
+        "cpu_seconds": 0.055303
+      },
+      {
+        "name": "VP2_BLOCK_COPY8_24_CORRECT",
+        "cpu_seconds": 0.055602
+      },
+      {
+        "name": "VP2_BLOCK_COPY8_X3_CORRECT",
+        "cpu_seconds": 0.052658
+      },
+      {
+        "name": "VP2_BLOCK_COPY8_INDEXED_CORRECT",
+        "cpu_seconds": 0.060382
+      },
+      {
+        "name": "VP2_BLOCK_COPYBYTE_INDEXED_CORRECT",
+        "cpu_seconds": 0.067
+      },
+      {
+        "name": "module:blocks.ml",
+        "cpu_seconds": 1.536859
+      },
+      {
+        "name": "module:memmove_specs.ml",
+        "cpu_seconds": 0.605129
+      },
+      {
+        "name": "module:memmove_bounds.ml",
+        "cpu_seconds": 0.105122
+      },
+      {
+        "name": "module:memmove_forward.ml",
+        "cpu_seconds": 0.772146
+      },
+      {
+        "name": "module:memmove_backward.ml",
+        "cpu_seconds": 0.601404
+      },
+      {
+        "name": "module:memmove.ml",
+        "cpu_seconds": 0.729432
+      },
+      {
+        "name": "module:memmove_zero.ml",
+        "cpu_seconds": 0.16301
+      }
+    ],
+    "load_cpu_seconds": 198.997332
+  },
+  "native": {
+    "status": "finite native observations; formal overlap/termination/access proofs still required",
+    "checks": 35709,
+    "output": "native memmove: 35709 checks passed (snapshot/libc/overlap/guards/ABI, seed 0x19273645)",
+    "body_bytes": 68,
+    "executable_sha256": "5c63fb6ea1033cfeb6400679fccb8dddec0fc551a073e444f2dc77bc9e298537",
+    "inputs": {
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/generator/main.ml": "d86ee0129daae73a2fc145972b5bdbab7a92d255e2dc03f7560cbe614c7577f6",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/generator/m2.ml": "e15376272d772dc0fb294d7188f9989b8e5f43685b3e25c3f3c0da793bd54a89",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/include/vp2_memory.h": "f2d842c02a2cff49f36d55f507747f2e93d4b4512981c123dbad8dc2d47c23cf",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/include/vp2_evolution.h": "358584ccb1aece7f97f7e859502514f5a7ceb0fbdd557f9435ec3cd25a4c9322",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tests/memmove.c": "8800c947094c37c17a5bae8f5a5aa5d44722731fa80da0aeaee528b1f0979e3a",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tests/abi.S": "3c99fea9c8795f7b0dc4920fc46bbea4871547b6bc4f4e391e64a7a4cacc5baf",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/native_m2.py": "2f6bc3c4eb1c9cce4536c2b172984575156ad2205e04230701b0f0e8aed5d7b2",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/build_m2.py": "fa1b217e09a519ef0d40b870a605e184de4186e3fffcea5b6f6507478df71a04",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_memmove.o": "4493e5ef86ec691c4ed165ea5203cfba504e66b2baf4dfbf83aa1f33b4c03205",
+      "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/test_memmove": "5c63fb6ea1033cfeb6400679fccb8dddec0fc551a073e444f2dc77bc9e298537"
+    }
+  },
+  "functional_frame_termination_proved": true,
+  "pending": [
+    "arbitrary-length access theorem",
+    "model/native mutation witnesses",
+    "performance evaluation",
+    "E4/M2 completion audit"
+  ]
+}

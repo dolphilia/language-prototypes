@@ -4,7 +4,9 @@
 
 作成日: **2026-11-08**
 
-状態: **計画済み・実装未着手**。以下のファイル構成、定理名、コマンドは実装予定を示す。今回作成するのは計画書であり、証明済みのライブラリや測定結果ではない。
+後続の計画: [検証済みlibcの発展](../verified-libc-evolution/README.md)。証明合成と任意長コピーから、呼び出し条件・重複・リンク・モデル・資源と探索へ段階的に進める。
+
+状態: **完了（検証・評価用の最小プロトタイプ）**。更新日: **2026-11-08**。[実装と再実行手順](../../../prototypes/verified-libc-minimal/README.md) · [完了条件の監査](../../../prototypes/verified-libc-minimal/reports/audit.md)。以下は完了条件を含む元の実装計画であり、予定を実績として扱わない。[実施記録](../../../prototypes/verified-libc-minimal/reports/progress.md)に各段階の状態と証拠を残す。
 
 ## 1. 何を作り、何を確かめるか
 
@@ -153,7 +155,7 @@ P4でも追加の余白や、常に整列していることを公開APIの前提
 
 ## 8. 予定する配置と実行手順
 
-将来の実装は、既存の試作言語から独立した次の場所へ置く。以下は予定であり、存在するファイルへのリンクではない。
+実装は、既存の試作言語から独立した`prototypes/verified-libc-minimal/`に置いた。以下は計画時に想定した配置であり、実際のファイルと使い方は[実装のREADME](../../../prototypes/verified-libc-minimal/README.md)を参照する。
 
 ```text
 prototypes/verified-libc-minimal/
@@ -175,10 +177,10 @@ prototypes/verified-libc-minimal/
 
 依存の導入は明示した手順で行い、通常の検査コマンドからネットワークへアクセスしたり、依存を自動更新したりしない。既存プロジェクトのモデルと証明補助処理を利用し、暗号ライブラリ全体の構築・検証を必須にしない。再利用部分のライセンスと出典を残す。
 
-導入後の利用者向け入口は、次の二つを目標にする。
+導入後の利用者向け入口は、次の二つである。いずれも実装し、`measure`による全検査と測定の完走を確認した。
 
 ```sh
-# 予定するコマンド。現時点では未実装。
+# 実施結果と保証の範囲は、冒頭の完了監査を参照。
 make -C prototypes/verified-libc-minimal verify
 make -C prototypes/verified-libc-minimal measure
 ```

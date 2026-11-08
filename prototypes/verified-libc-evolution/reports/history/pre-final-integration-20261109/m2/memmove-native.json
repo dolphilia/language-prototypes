@@ -1,0 +1,19 @@
+{
+  "status": "finite native observations; formal overlap/termination/access proofs still required",
+  "checks": 35709,
+  "output": "native memmove: 35709 checks passed (snapshot/libc/overlap/guards/ABI, seed 0x19273645)",
+  "body_bytes": 68,
+  "executable_sha256": "5c63fb6ea1033cfeb6400679fccb8dddec0fc551a073e444f2dc77bc9e298537",
+  "inputs": {
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/generator/main.ml": "d86ee0129daae73a2fc145972b5bdbab7a92d255e2dc03f7560cbe614c7577f6",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/generator/m2.ml": "e15376272d772dc0fb294d7188f9989b8e5f43685b3e25c3f3c0da793bd54a89",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/include/vp2_memory.h": "f2d842c02a2cff49f36d55f507747f2e93d4b4512981c123dbad8dc2d47c23cf",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/include/vp2_evolution.h": "358584ccb1aece7f97f7e859502514f5a7ceb0fbdd557f9435ec3cd25a4c9322",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tests/memmove.c": "8800c947094c37c17a5bae8f5a5aa5d44722731fa80da0aeaee528b1f0979e3a",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tests/abi.S": "3c99fea9c8795f7b0dc4920fc46bbea4871547b6bc4f4e391e64a7a4cacc5baf",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/native_m2.py": "2f6bc3c4eb1c9cce4536c2b172984575156ad2205e04230701b0f0e8aed5d7b2",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/tools/build_m2.py": "fa1b217e09a519ef0d40b870a605e184de4186e3fffcea5b6f6507478df71a04",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/vp2_memmove.o": "4493e5ef86ec691c4ed165ea5203cfba504e66b2baf4dfbf83aa1f33b4c03205",
+    "/Users/dolphilia/github/language-prototypes/prototypes/verified-libc-evolution/build/test_memmove": "5c63fb6ea1033cfeb6400679fccb8dddec0fc551a073e444f2dc77bc9e298537"
+  }
+}

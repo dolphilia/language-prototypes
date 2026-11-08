@@ -1,0 +1,9 @@
+cp ../../*.ml .; \
+          cp -f ../diffs/*.ml .; \
+          java -jar ../tools/nametheorems.jar *.ml; \
+          cp -f ../../pa_j_*.ml .; \
+          rm *.ml.old
+Error: Unable to access jarfile ../tools/nametheorems.jar
+cp: ../../pa_j_*.ml: No such file or directory
+rm: *.ml.old: No such file or directory
+make: *** [sources] Error 1

@@ -1,0 +1,10 @@
+{
+  "name": "QEMU system AArch64 TCG",
+  "version": "10.1.0",
+  "upstream_commit": "f8b2f64e2336a28bf0d50b6ef8a7d8c013e9bcf3",
+  "binary": "/opt/homebrew/Cellar/qemu/10.1.0/bin/qemu-system-aarch64",
+  "sha256": "b27ed0e029cfbd452be5a440139d8ff84d473353c8694521888d609ef8a244ce",
+  "source_rebuilt_for_this_experiment": false,
+  "licensing": "QEMU GPL-2.0; individual components and firmware may have separate licenses; no QEMU binary is vendored",
+  "target": "virt / cortex-a72 / ordinary AArch64 / TCG / no guest OS / no guest network"
+}
